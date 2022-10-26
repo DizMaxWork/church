@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Расписание Богослужений</title>
+</head>
+<body style="background-color: #fbfbfb;">
+  <div class="mobile-menu hidden">
+    <div>
+        <div class="flex items-center pb-4 ">
+          <div class="">
+            <ul class="flex ml-[5px]">
+              <li class="font-semibold mr-4 py-4 md:px-7 px-3 rounded-sm text-sm" style="border: 1px solid #373737;">
+                <a href="#">
+                  Подать требу
+                </a>
+              </li>
+              <li  class="py-4 md:px-6 px-3 rounded-sm font-semibold text-sm" style="background-color: #D43E34; color: #ffffff;">
+                <a href="#">
+                  Пожертвовать
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-menu__close w-8 ml-auto -mr-2">
+            <img src="img/burger-close.svg" alt="">
+          </div>
+        </div>
+        <div style="border-bottom: 1px solid #373737;"></div>
+        <div class="pt-8">
+            <ul>
+                <li class="mb-4 text-2xl font-bold">
+                  <a href="index.html">
+                    ИСТОРИЯ ХРАМА
+                  </a>
+                </li>
+                <li class="mb-4 text-2xl font-bold">
+                    <a href="inter.html">
+                      ОТЧЕТ О РЕСТАВРАЦИИ
+                    </a>
+                </li>
+                <li class="mb-4 text-2xl font-bold">
+                    <a href="timetable.html">
+                        РАСПИСАНИЕ БОГОСЛУЖЕНИЙ
+                    </a>
+                </li>
+                <li class="mb-4 text-2xl font-bold">
+                    <a href="#">
+                        РЕКВИЗИТЫ И КОНТАКТЫ
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </div>
+  <header style="box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05); position: sticky; background-color: #fbfbfb; top: 0; z-index: 1;">
+    <div class="container mx-auto px-5">
+      <div class="flex xl:items-center py-4">
+        <nav>
+          <ul class="flex -mx-3 xl:flex hidden">  
+            <li class="font-medium mx-3">
+              <a href="index.html" class="link">
+                История храма
+              </a>
+            </li>
+            <li class="font-medium mx-3">
+              <a href="inter.html" class="link">
+                Отчет о реставрации
+              </a>
+            </li>
+            <li class="font-medium mx-3">
+              <a href="timetable.html" class="link">
+                Расписание богослужений
+              </a>
+            </li>
+            <li class="font-medium mx-3">
+              <a href="#" class="link">
+                Реквизиты и контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="xl:ml-auto">
+          <ul class="flex">
+            <li class="font-semibold mr-4 py-4 md:px-7 px-3 rounded-sm text-sm link-2 cursor-pointer" style="border: 1px solid #373737;">
+              <a href="#">
+                Подать требу
+              </a>
+            </li>
+            <li  class="py-4 md:px-6 px-3 rounded-sm font-semibold text-sm link-2 cursor-pointer" style="background-color: #D43E34; color: #ffffff;">
+              <a href="#">
+                Пожертвовать
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="burger__menu">
+          <div>
+              
+          </div>
+        </div>
+      <div class="bars ml-auto sm:mt-6 mt-4 xl:hidden">
+        <img src="img/burger.svg" alt="">
+      </div>
+      </div>
+    </div>
+  </header>
+    <div class="bg-2 md:bg-none">
+      <main>
+        <section class="md:pb-32 pb-12">
+              <div class="container mx-auto px-5">
+                <h2 class="lg:text-[88px] md:text-[70px] sm:text-[40px] text-[32px] font-semibold leading-tight md:pt-20 pt-12 md:pb-28 pb-12">
+                    РАСПИСАНИЕ БОГОСЛУЖЕНИЙ
+                </h2>
+                <div>
+                    <div class="flex md:flex-nowrap flex-wrap md:pb-10 pb-4 xxl:w-[70%] lg:w-[80%]" style="border-bottom: 1px solid #373737;">
+                        <div class="xxl:w-[15%] xl:w-[17%] lg:w-[23%] md:w-[24%] w-full border-1 md:pb-0 pb-2">
+                            <ul class="flex flex-wrap md:items-start items-center md:justify-center md:pr-8" >
+                                <li class="md:text-[56px] text-[24px] font-semibold leading-none md:mr-0 mr-[10px]" style="font-family: Jost;">
+                                    17
+                                </li>
+                                <li class="md:text-2xl text-[24px] font-semibold" style="font-family: Jost;">
+                                    СЕНТЯБРЯ
+                                </li>
+                                <li class="font-semibold md:ml-0 ml-auto" style="font-family: Jost;">
+                                    ПН
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="border-2 w-full md:hidden block"></div>
+                        <div class="md:pl-8 md:pt-0 pt-4">
+                            <h3 class="md:text-2xl font-semibold" style="font-family: Jost;">
+                                ПРЕОБРАЖЕНИЕ ГОСПОДНЕ
+                            </h3>
+                            <div class="flex md:pt-4 pt-2">
+                                <span class="md:text-xl text-[14px] font-semibold" style="font-family: Jost;">
+                                    8:00
+                                </span>
+                                <p class="md:text-xl text-[14px] pl-2" style="font-family: Jost;">
+                                    Божественная литургия, освящение плодов
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex md:flex-nowrap flex-wrap md:pb-10 pb-4 xxl:w-[70%] lg:w-[80%] pt-10" style="border-bottom: 1px solid #373737;">
+                        <div class="xxl:w-[15%] xl:w-[17%] lg:w-[42%] md:w-[47%] w-full border-1 md:pb-0 pb-2" >
+                            <ul class="flex flex-wrap md:items-start items-center md:justify-center md:pr-8" >
+                                <li class="md:text-[56px] text-[24px] font-semibold leading-none md:mr-0 mr-[10px]" style="font-family: Jost;">
+                                    19
+                                </li>
+                                <li class="md:text-2xl text-[24px] font-semibold" style="font-family: Jost;">
+                                    СЕНТЯБРЯ
+                                </li>
+                                <li class="font-semibold md:ml-0 ml-auto" style="font-family: Jost;">
+                                    ЧТ
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="border-2 w-full md:hidden block"></div>
+                        <div class="md:pl-8 md:pt-0 pt-4">
+                            <h3 class="md:text-2xl xxl:w-[79%] xl:w-[85%] font-semibold" style="font-family: Jost;">
+                                НЕДЕЛЯ 10-Я ПО ПЯТИДЕСЯТНИЦЕ, ПРЕПОДОБНЫЕ ЗОСИМА И САВВАТИЙ СОЛОВЕЦКЕ
+                            </h3>
+                            <div class="flex flex-wrap pt-4">
+                                <span class="md:text-xl text-[14px] font-semibold" style="font-family: Jost;">
+                                    8:00
+                                </span>
+                                <p class="md:text-xl text-[14px] pl-2 w-[90%]" style="font-family: Jost;">
+                                    Полиелейная утренняя
+                                </p>
+                                <span class="md:text-xl text-[14px] font-semibold" style="font-family: Jost;">
+                                    9:00
+                                </span>
+                                <p class="md:text-xl text-[14px] pl-2" style="font-family: Jost;">
+                                    Божественная литургия
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex md:flex-nowrap flex-wrap md:pb-10 pb-4 xxl:w-[70%] lg:w-[80%] pt-10 border-3">
+                        <div class="xxl:w-[15%] xl:w-[17%] lg:w-[23%] md:w-[23.5%] w-full border-1 md:pb-0 pb-2">
+                            <ul class="flex flex-wrap md:items-start items-center md:justify-center md:pr-8" >
+                                <li class="md:text-[56px] text-[24px] font-semibold leading-none md:mr-0 mr-[10px]" style="font-family: Jost;">
+                                    24
+                                </li>
+                                <li class="md:text-2xl text-[24px] font-semibold" style="font-family: Jost;">
+                                    СЕНТЯБРЯ
+                                </li>
+                                <li class="font-semibold md:ml-0 ml-auto" style="font-family: Jost;">
+                                    ПН
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="border-2 w-full md:hidden block"></div>
+                        <div class="md:pl-8 md:pt-0 pt-4">
+                            <h3 class="md:text-2xl font-semibold" style="font-family: Jost;">
+                                ПРЕОБРАЖЕНИЕ ГОСПОДНЕ
+                            </h3>
+                            <div class="flex flex-wrap pt-4">
+                                <span class="md:text-xl text-[14px] font-semibold" style="font-family: Jost;">
+                                    8:00
+                                </span>
+                                <p class="md:text-xl text-[14px] pl-2 w-[90%]" style="font-family: Jost;">
+                                    Полиелейная утренняя
+                                </p>
+                                <span class="md:text-xl text-[14px] font-semibold" style="font-family: Jost;">
+                                    9:00
+                                </span>
+                                <p class="md:text-xl text-[14px] pl-2" style="font-family: Jost;">
+                                    Божественная литургия
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:flex hidden pb-10 xxl:w-[70%] lg:w-[80%] pt-10">
+                        <div class="xxl:w-[15%] xl:w-[17%] lg:w-[42%] md:w-[46%]" style="border-right: 2px solid #373737;">
+                            <ul class="flex flex-wrap justify-center pr-8" >
+                                <li class="text-[56px] font-semibold leading-none" style="font-family: Jost;">
+                                    19
+                                </li>
+                                <li class="text-2xl font-semibold" style="font-family: Jost;">
+                                    СЕНТЯБРЯ
+                                </li>
+                                <li class="font-semibold" style="font-family: Jost;">
+                                    ЧТ
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pl-8">
+                            <h3 class="text-2xl xxl:w-[79%] xl:w-[85%] flex-wrap font-semibold" style="font-family: Jost;">
+                                НЕДЕЛЯ 10-Я ПО ПЯТИДЕСЯТНИЦЕ, ПРЕПОДОБНЫЕ ЗОСИМА И САВВАТИЙ СОЛОВЕЦКЕ
+                            </h3>
+                            <div class="flex flex-wrap pt-4">
+                                <span class="text-xl font-semibold" style="font-family: Jost;">
+                                    8:00
+                                </span>
+                                <p class="text-xl pl-2 w-[90%]" style="font-family: Jost;">
+                                    Полиелейная утренняя
+                                </p>
+                                <span class="text-xl font-semibold" style="font-family: Jost;">
+                                    9:00
+                                </span>
+                                <p class="text-xl w-[90%] pl-2" style="font-family: Jost;">
+                                    Божественная литургия
+                                </p>
+                                <span class="text-xl font-semibold" style="font-family: Jost;">
+                                    8:00
+                                </span>
+                                <p class="text-xl pl-2 w-[90%]" style="font-family: Jost;">
+                                    Полиелейная утренняя
+                                </p>
+                                <span class="text-xl font-semibold" style="font-family: Jost;">
+                                    9:00
+                                </span>
+                                <p class="text-xl w-[90%] pl-2" style="font-family: Jost;">
+                                    Божественная литургия
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+    </main>
+    <footer>
+      <div class="container mx-auto px-5">
+        <div class="lg:flex hidden justify-between md:flex-nowrap flex-wrap pt-14" style="border-top: 2px solid #373737;">
+          <div class="w-1/2 text-xs">
+            <p class="w-1/2 pb-4">
+              Русская Православная Церковь, Воронежская митрополия, Россошанская епархия, Калачеевское благочиние.
+            </p>
+            <p class="w-[48%] pb-4 text-xs">
+              Реквизиты:  397600, Воронежская обл., г. Калач, пл. Ленина, 7а.
+            </p>
+            <p class="w-1/2 pb-4 text-xs">
+              Банковские реквизиты: Местная религиозная организация православный приход храма в честь Успения Пресвятой Богородицы. г. Калач.
+  
+            </p>
+            <p class="w-[14%] pb-4 text-xs">
+              ИНН 3610999011 КПП 361001001 Бик 042007681
+            </p>
+            <p class="w-[40%] pb-4 text-xs">
+              Центрально-Черноземный банк Сбербанка России г. Воронеж Сч № 40703810013120010372 к/с: 30101810600000000681
+            </p>
+          </div>
+              <div>
+                <h3 class="font-bold pb-2">
+                  История храма
+                </h3>
+                <div class="w-[20%]" style="border-top: 4px solid #D43E34;"></div>
+                <ul class="pt-6">
+                  <li class="font-medium py-2">
+                    <a href="#" class="link">
+                      Отчет о реставрации
+                    </a>
+                  </li>
+                  <li class="font-medium py-2">
+                    <a href="#" class="link">
+                      Расписание богослужений
+                    </a>
+                  </li>
+                  <li class="font-medium py-2">
+                    <a href="#" class="link">
+                      Реквизиты и контакты
+                    </a>
+                  </li>
+                  <li class="font-medium py-2">
+                    <a href="#" class="link">
+                      Пожертвовать
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-bold pb-2">
+                  Социальные сети
+                </h3>
+                <div class="w-[33%]" style="border-top: 4px solid #D43E34;"></div>
+                <ul class="pt-6">
+                  <li class="font-medium py-2">
+                    <a href="#" class="link">
+                      ВКонтакте
+                    </a>
+                  </li>
+                  <li class="font-medium py-2">
+                    <a href="#" class="link">
+                      Одноклассники
+                    </a>
+                  </li>
+                  <li class="font-medium py-2">
+                    <a href="#" class="link">
+                      YouTube
+                    </a>
+                  </li>
+                </ul>
+              </div>
+        </div>
+
+        <div>
+          <div class="lg:hidden flex md:justify-around justify-between pt-10 flex-wrap" style="border-top: 2px solid #373737;">
+            <div>
+              <h3 class="font-bold pb-2">
+                История храма
+              </h3>
+              <div class="w-[28%]" style="border-top: 4px solid #D43E34;"></div>
+              <ul class="pt-6">
+                <li class="text-xs font-medium py-2">
+                  <a href="#">
+                    Отчет о реставрации
+                  </a>
+                </li>
+                <li class="text-xs font-medium py-2">
+                  <a href="#">
+                    Расписание богослужений
+                  </a>
+                </li>
+                <li class="text-xs font-medium py-2">
+                  <a href="#">
+                    Реквизиты и контакты
+                  </a>
+                </li>
+                <li class="text-xs font-medium py-2">
+                  <a href="#">
+                    Пожертвовать
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-bold pb-2">
+                Социальные сети
+              </h3>
+              <div class="w-[33%]" style="border-top: 4px solid #D43E34;"></div>
+              <ul class="pt-6">
+                <li class="text-xs font-medium py-2">
+                  <a href="#">
+                    ВКонтакте
+                  </a>
+                </li>
+                <li class="text-xs font-medium py-2">
+                  <a href="#">
+                    Одноклассники
+                  </a>
+                </li>
+                <li class="text-xs font-medium py-2">
+                  <a href="#">
+                    YouTube
+                  </a>
+                </li>
+              </ul>
+            </div>
+          <div class="w-full text-xs md:mx-auto md:w-[70%] pt-12">
+            <p class="pb-4 font-medium">
+              Русская Православная Церковь, Воронежская митрополия, Россошанская епархия, Калачеевское благочиние.
+            </p>
+            <p class="pb-4 text-xs font-medium">
+              Реквизиты:  397600, Воронежская обл., г. Калач, пл. Ленина, 7а.
+            </p>
+            <p class="pb-4 text-xs font-medium">
+              Банковские реквизиты: Местная религиозная организация православный приход храма в честь Успения Пресвятой Богородицы. г. Калач.
+  
+            </p>
+            <p class="w-[14%] pb-4 text-xs font-medium">
+              ИНН 3610999011 КПП 361001001 Бик 042007681
+            </p>
+            <p class="pb-4 text-xs font-medium">
+              Центрально-Черноземный банк Сбербанка России г. Воронеж Сч № 40703810013120010372 к/с: 30101810600000000681
+            </p>
+          </div>
+        </div>
+        </div>
+
+        <div class="flex justify-between pt-[72px] pb-4">
+          <div>
+            <div>
+              <span class="text-xs font-semibold">
+                Концепция и тектс - 
+                <a href="https://vk.com/llmarketing" class="font-bold">Андрей Пилипенко
+                </a>
+              </span>
+            </div>
+            <div>
+              <span class="text-xs font-semibold">
+                Дизайн и программирование -
+                <a href="https://t.me/Tema_dizz" class="font-bold">
+                  DIZDIZ
+                </a>
+              </span>
+            </div>
+          </div>
+          <span class="text-xs font-semibold">
+            © Все права защищены. 2022 г
+          </span>
+        </div>
+      </div>
+    </footer>
+    </div>
+      </div>
+      <script src="js/jquery-js.js"></script>
+      <script src="js/main.js"></script>
+</body>
+</html>
