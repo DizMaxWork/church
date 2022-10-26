@@ -8,6 +8,8 @@ $(document).ready(function (){
 
     $(".slick").slick({
         slidesToShow:10,
+        infinite: false,
+        focusOnSelect: true,
         nextArrow: "<div class='arrow-2'></div>",
         prevArrow: "<div class='arrow-1'></div>",
         responsive: [
@@ -37,4 +39,8 @@ $(document).ready(function (){
             }
         ]
     })
-})
+});
+
+// $('.slick').on('afterChange', function(event, slick, currentSlide, nextSlide){
+//     $('.slick').find('.slick-current').find('label').trigger('click');
+// });
