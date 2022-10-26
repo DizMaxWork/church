@@ -226,3 +226,6 @@ body{
    transition: 0.5s;
    color: #ffffff;
 }
+.mobile-menu__close{
+   margin-top: 1.25rem;
+}

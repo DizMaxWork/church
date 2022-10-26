@@ -1,9 +1,13 @@
 $(document).ready(function (){
     $(".bars").on("click",function(){
-        $(".mobile-menu").fadeIn() 
+        $(".mobile-menu").fadeIn(); 
+        $(this).hide();
+        $(".mobile-menu__close").show();
     });
     $(".mobile-menu__close").on("click", function(){
-        $(".mobile-menu").fadeOut()
+        $(".mobile-menu").fadeOut();
+        $(this).hide();
+        $(".bars").show();
     });
 
     $(".slick").slick({
