@@ -149,38 +149,35 @@
                             ЭТО ОЧЕНЬ ПОМОЖЕТ СКОРЕЕ ОТКРЫТЬ ХРАМ ДЛЯ МОЛЯЩИХСЯ
                         </p>
                     </div>
-                    <div class="flex">
-                      <div>
+                    <div class="flex pt-8">
+                      <div class="mr-4">
                         <script type="text/javascript">
                           document.write(VK.Share.button({url: 'http://mysite.com', title: 'Заголовок страницы'}, {type: 'custom', text: '<img src="https://vk.com/images/share_32_2x.png" width="70" height="70" border-radius="24px">'}));
                         </script>
                       </div>
                       <div>
                         <div id="ok_shareWidget"></div>
-                      <script>
-                      !function (d, id, did, st, title, description, image) {
-                        function init(){
-                          OK.CONNECT.insertShareWidget(id,did,st, title, description, image);
-                        }
-                        if (!window.OK || !OK.CONNECT || !OK.CONNECT.insertShareWidget) {
-                          var js = d.createElement("script");
-                          js.src = "https://connect.ok.ru/connect.js";
-                          js.onload = js.onreadystatechange = function () {
-                          if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
-                            if (!this.executed) {
-                              this.executed = true;
-                              setTimeout(init, 0);
+                          <script>
+                          !function (d, id, did, st, title, description, image) {
+                            function init(){
+                              OK.CONNECT.insertShareWidget(id,did,st, title, description, image);
                             }
-                          }};
-                          d.documentElement.appendChild(js);
-                        } else {
-                          init();
-                        }
-                      }(document,"ok_shareWidget",document.URL,'{"sz":70,"st":"oval","bgclr":"ED8207","txclr":"FFFFFF"}',"","","");
-                      </script>
-                      </div>
-                      <div>
-                        <script async src="https://telegram.org/js/telegram-widget.js?21" data-telegram-share-url="https://core.telegram.org/widgets/share" data-size="large" data-text="notext"></script>
+                            if (!window.OK || !OK.CONNECT || !OK.CONNECT.insertShareWidget) {
+                              var js = d.createElement("script");
+                              js.src = "https://connect.ok.ru/connect.js";
+                              js.onload = js.onreadystatechange = function () {
+                              if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+                                if (!this.executed) {
+                                  this.executed = true;
+                                  setTimeout(init, 0);
+                                }
+                              }};
+                              d.documentElement.appendChild(js);
+                            } else {
+                              init();
+                            }
+                          }(document,"ok_shareWidget",document.URL,'{"sz":70,"st":"rounded","bgclr":"ED8207","txclr":"FFFFFF"}',"","","");
+                          </script>
                       </div>
                     </div>
                     <div class="pt-20">
