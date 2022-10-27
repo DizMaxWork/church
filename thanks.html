@@ -180,7 +180,7 @@
                           </script>
                       </div>
                     </div>
-                    <div class="pt-20">
+                    <div class="pt-20 pb-20">
                         <div>
                             <h2 class="xl:text-[64px] lg:text-[55px] sm:text-[49px] text-[30px] font-semibold xl:w-1/2 w-[55%] leading-tight">
                                 ПОДПИСЫВАЙТЕСЬ НА ГРУППЫ
@@ -190,6 +190,35 @@
                             <p class="sm:text-[24px] text-[18px] font-medium xxl:w-[52%] xl:w-[65%]">
                                 ТАМ МЫ ОТЧИТЫВАЕМСЯ О ХОДЕ РЕСТАВРАЦИИ И ВЫКЛАДЫВАЕМ НАСТАВЛЕНИЯ ОТ ОТЦА ДИМИТРИЯ
                             </p>
+                        </div>
+                        <div class="flex flex-wrap">
+                          <div class="mr-8">
+                            <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+                            <!-- Put this div tag to the place, where the Group block will be -->
+                            <div id="vk_groups"></div>
+                            <script type="text/javascript">
+                              VK.Widgets.Group("vk_groups", {mode: 4, wide: 1, width: 360, height: 400, color1: "FFFFFF", color2: "000000", color3: "5181B8"}, 166562603);
+                            </script>
+                          </div>
+                          <div>
+                            <div id="ok_group_widget"></div>
+                              <script>
+                              !function (d, id, did, st) {
+                                var js = d.createElement("script");
+                                js.src = "https://connect.ok.ru/connect.js";
+                                js.onload = js.onreadystatechange = function () {
+                                if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+                                  if (!this.executed) {
+                                    this.executed = true;
+                                    setTimeout(function () {
+                                      OK.CONNECT.insertGroupWidget(id,did,st);
+                                    }, 0);
+                                  }
+                                }};
+                                d.documentElement.appendChild(js);
+                              }(document,"ok_group_widget","50582132228315",'{"width":360,"height":400,"type":"feed"}');
+                              </script>
+                          </div>
                         </div>
                     </div>
                 </div>
