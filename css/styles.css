@@ -676,24 +676,14 @@ video {
   margin-right: 0.5rem;
 }
 
-.-mx-5 {
-  margin-left: -1.25rem;
-  margin-right: -1.25rem;
-}
-
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.-my-4 {
-  margin-top: -1rem;
-  margin-bottom: -1rem;
+.-mx-5 {
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
 }
 
 .mr-4 {
@@ -776,6 +766,14 @@ video {
   margin-left: 1rem;
 }
 
+.mt-\[20px\] {
+  margin-top: 20px;
+}
+
+.ml-12 {
+  margin-left: 3rem;
+}
+
 .ml-\[5px\] {
   margin-left: 5px;
 }
@@ -784,28 +782,16 @@ video {
   margin-right: 2rem;
 }
 
-.mr-\[10px\] {
-  margin-right: 10px;
-}
-
 .-mt-10 {
   margin-top: -2.5rem;
 }
 
-.mr-32 {
-  margin-right: 8rem;
+.mr-\[10px\] {
+  margin-right: 10px;
 }
 
-.ml-32 {
-  margin-left: 8rem;
-}
-
-.ml-12 {
-  margin-left: 3rem;
-}
-
-.mt-\[20px\] {
-  margin-top: 20px;
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .block {
@@ -1012,6 +998,18 @@ video {
   width: 92%;
 }
 
+.w-\[52\%\] {
+  width: 52%;
+}
+
+.w-\[68\%\] {
+  width: 68%;
+}
+
+.w-\[30\%\] {
+  width: 30%;
+}
+
 .w-\[48\%\] {
   width: 48%;
 }
@@ -1042,14 +1040,6 @@ video {
 
 .w-\[21\%\] {
   width: 21%;
-}
-
-.w-\[52\%\] {
-  width: 52%;
-}
-
-.w-\[30\%\] {
-  width: 30%;
 }
 
 .max-w-none {
@@ -1150,16 +1140,6 @@ video {
   padding-right: 2rem;
 }
 
-.px-1\.5 {
-  padding-left: 0.375rem;
-  padding-right: 0.375rem;
-}
-
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -1168,6 +1148,16 @@ video {
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-1\.5 {
+  padding-left: 0.375rem;
+  padding-right: 0.375rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .pb-4 {
@@ -1322,8 +1312,20 @@ video {
   padding-left: 0.75rem;
 }
 
+.pb-14 {
+  padding-bottom: 3.5rem;
+}
+
 .pl-8 {
   padding-left: 2rem;
+}
+
+.pr-14 {
+  padding-right: 3.5rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
 }
 
 .pt-\[72px\] {
@@ -1342,28 +1344,12 @@ video {
   padding-top: 0.5rem;
 }
 
-.pl-2 {
-  padding-left: 0.5rem;
-}
-
 .pr-8 {
   padding-right: 2rem;
 }
 
-.pb-14 {
-  padding-bottom: 3.5rem;
-}
-
-.pl-14 {
-  padding-left: 3.5rem;
-}
-
-.pr-14 {
-  padding-right: 3.5rem;
-}
-
-.pt-7 {
-  padding-top: 1.75rem;
+.pt-3 {
+  padding-top: 0.75rem;
 }
 
 .text-left {
