@@ -89,7 +89,7 @@
             <div class="xl:ml-auto">
                 <ul class="flex">
                     <li class="font-semibold mr-4 py-4 md:px-7 px-3 rounded-sm text-sm link-2 cursor-pointer" style="border: 1px solid #373737;">
-                        <a href="#">
+                        <a href="#form">
                             Подать требу
                         </a>
                     </li>
@@ -874,14 +874,14 @@
                                         <div class="flex items-center py-1">
                                             <input type="checkbox" required>
                                             <span class="text-xs pl-3">
-                              Согласен с условиями <a href="#">оферты</a>
-                            </span>
+                                                Согласен с условиями <a href="#">оферты</a>
+                                            </span>
                                         </div>
                                         <div class="flex items-center py-1">
                                             <input type="checkbox" required>
                                             <span class="text-xs pl-3">
-                              Согласен на обработку <a href="#">персональных данных</a>
-                            </span>
+                                                Согласен на обработку <a href="#">персональных данных</a>
+                                            </span>
                                         </div>
                                     </div>
                                     <div class="pt-10">
@@ -898,117 +898,221 @@
         </section>
         <section class="md:pt-40 pt-24">
             <div class="container mx-auto px-5">
-                <h2 class="xl:text-[64px] lg:text-[42px] md:text-[40px] text-[24px] font-semibold lg:leading-tight">
+                <h2 class="xl:text-[64px] lg:text-[42px] md:text-[40px] text-[24px] font-semibold lg:leading-tight pb-14">
                     ВЫ МОЖЕТЕ ПОДАТЬ ТРЕБУ И ОТЕЦ ДМИТРИЙ ПОМОЛИТСЯ ЗА ВАШИХ БЛИЗКИХ В СТЕНАХ ХРАМА
                 </h2>
-                <div class="xl:ml-auto ml-0 xxl:w-[74%] xl:w-[90%] lg:w-full md:mt-14 sm:mt-6 form-2">
-                    <form action="form" class="lg:px-10 md:px-6 px-4 pb-12" style="background: #fafafa;">
-                        <div class="md:pt-10 pt-6">
-                            <h4 class="md:text-[40px] text-[24px] font-medium">
+                <div id="form" class="h-[648px]" style="background-color: #FAFAFA; border: 1px solid #DFDFDE; box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.25); border-radius: 2px;">
+                    <form action="form" class="pl-8">
+                        <div>
+                            <h3 class="font-medium text-[40px] pt-10 pb-8">
                                 Выберите требу:
-                            </h4>
+                            </h3>
                         </div>
-                        <div class="flex pt-8 xxl:pb-2 xl:pb-6 md:pb-8 justify-between md:flex-nowrap flex-wrap">
-                            <div class="lg:w-[53%] md:w-[65%] lg:pr-0 md:pr-4">
-                                <div class="flex justify-between md:flex-nowrap flex-wrap pb-4 md:my-0 -my-2">
-                                    <div class="py-4 px-6 md:w-auto w-full md:my-0 my-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                        <div class="pb-2">
-                                            <p class="pb-1 font-medium">
-                                                Проскомидия
-                                            </p>
-                                            <div class="w-[30%]" style="border-bottom: 2px solid #D43E34;"></div>
-                                        </div>
-                                        <div>
-                                            <input type="radio">
-                                            <span>О здравии</span>
-                                        </div>
-                                        <div>
-                                            <input type="radio">
-                                            <span>О упокоении</span>
-                                        </div>
-                                    </div>
-                                    <div class="py-4 px-6 md:w-auto w-full md:my-0 my-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                        <div class="pb-2">
-                                            <p class="pb-1 font-medium">
-                                                Панихида
-                                            </p>
-                                            <div class="w-[30%]" style="border-bottom: 2px solid #D43E34;"></div>
-                                        </div>
-                                        <div>
-                                            <input type="radio">
-                                            <span>О успокоении</span>
-                                        </div>
-                                    </div>
-                                    <div class="py-4 px-6 md:w-auto w-full md:my-0 my-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                        <div class="pb-2">
-                                            <p class="pb-1 font-medium">
-                                                Молебден
-                                            </p>
-                                            <div class="w-[34%]" style="border-bottom: 2px solid #D43E34;"></div>
-                                        </div>
-                                        <div>
-                                            <input type="radio">
-                                            <span>О здравии</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pl-6 py-4" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                    <div class="pb-2">
-                                        <p class="pb-1 font-medium">
-                                            Литургия (обедня)
-                                        </p>
-                                        <div class="w-[6%]" style="border-bottom: 2px solid #D43E34;"></div>
-                                    </div>
-                                    <div class="-my-1">
-                                        <div class="py-1">
-                                            <input type="radio">
-                                            <span>О здравии</span>
-                                        </div>
-                                        <div class="py-1">
-                                            <input type="radio">
-                                            <span>О упокоении</span>
-                                        </div>
-                                        <div class="py-1">
-                                            <input type="radio">
-                                            <span>Особая (о заключённых, о путешествующих, болящих, благодарящих, просящих)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="md:w-[44%] w-full md:pt-0 pt-8">
-                                <div class="md:-my-6 -my-2">
-                                    <div class="md:my-6 my-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                        <input class="w-full px-4 py-2" type="text" name="name" placeholder="Имя" style="outline: none; background-color: transparent;">
-                                    </div>
-                                    <div class="md:my-6 my-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                        <input class="w-full px-4 py-2" type="text" name="name" placeholder="Имя" style="outline: none; background-color: transparent;">
-                                    </div>
-                                    <div class="md:my-6 my-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                        <input class="w-full px-4 py-2" type="text" name="name" placeholder="Имя" style="outline: none; background-color: transparent;">
-                                    </div>
-                                    <div class="md:my-6 my-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                        <input class="w-full px-4 py-2" type="text" name="name" placeholder="Имя" style="outline: none; background-color: transparent;">
-                                    </div>
-                                    <div class="md:my-6 my-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                        <input class="w-full px-4 py-2" type="text" name="name" placeholder="Имя" style="outline: none; background-color: transparent;">
-                                    </div>
+                        <div class="font-medium flex -mx-2">
+                            <div class="mx-2 px-4 py-2 link-5" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                <button>
+                                    Литургия
+                                </button>
+                            </div>   
+                            <div class="mx-2 px-4 py-2 link-5" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                <button>
+                                    Сорокоуст(40 литургий)
+                                </button>
+                            </div>  
+                            <div class="mx-2 px-4 py-2 link-5" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                <button>
+                                    Молебен
+                                </button>
+                            </div>  
+                            <div class="mx-2 px-4 py-2 link-5" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                <button>
+                                    Панихида
+                                </button>
+                            </div>   
+                        </div>
+                    </form>
+                </div>
+                <div class="h-[648px]" style="background-color: #FAFAFA; border: 1px solid #DFDFDE; box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.25); border-radius: 2px;">
+                    <form action="form" class="pl-8">
+                        <div>
+                            <h3 class="font-medium text-[40px] pt-10 pb-8">
+                                Выберите требу:
+                            </h3>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="w-[52%]">
+                                <div class="font-medium flex -mx-2 pb-6">
+                                    <div class="mx-2 px-4 py-2 link-5" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                        <button>
+                                            Литургия
+                                        </button>
+                                    </div>   
+                                    <div class="mx-2 px-4 py-2 link-5" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                        <button>
+                                            Сорокоуст(40 литургий)
+                                        </button>
+                                    </div>  
+                                    <div class="mx-2 px-4 py-2 link-5" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                        <button>
+                                            Молебен
+                                        </button>
+                                    </div>  
+                                    <div class="mx-2 px-4 py-2 link-5" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                        <button>
+                                            Панихида
+                                        </button>
+                                    </div>   
                                 </div>
                                 <div>
-                                    <div class="flex items-center pt-4">
-                                        <a href="#">
-                                            <img src="img/59.svg" alt="">
-                                        </a>
-                                        <a href="#" class="pl-4">
-                                            Добавить имя
-                                        </a>
+                                    <p class="font-medium pb-10">
+                                        Литургия – это главнейшее христианское богослужение.Сначала во время проскомидии 
+                                        из просфор вынимается частичка за каждое имя, написанное в поданных накануне требах. 
+                                        Затем во время обедни совершается символическое соединение тела и крови Господа (просфор и красного вина). Потом прихожане причащаются.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div>
+                                        <h3 class="font-semibold text-2xl pb-6">
+                                            Упоминание:
+                                        </h3>
+                                        <div class="flex -mx-2">
+                                            <div class="mx-2 px-4 py-2 link-5" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                                <button>
+                                                    О здравии
+                                                </button>
+                                            </div>
+                                            <div class="mx-2 px-4 py-2 link-5" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                                <button>
+                                                    О здравии
+                                                </button>
+                                            </div>
+                                            <div class="mx-2 px-4 py-2 link-5" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                                <button>
+                                                    Особая
+                                                </button>
+                                                <div class="hidden">
+        
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="pr-14">
+                                <div>
+                                    <h3 class="font-semibold text-2xl">
+                                        Впишите имена:
+                                    </h3>
+                                </div>
+                                <div>
+                                    <p>
+                                        Литургия особая на всякое прошение за рабов божих:
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class="my-4" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                    <input type="text" placeholder="Имя" class="w-full py-2 px-4" style="outline: none;">
+                                </div>
+                                <div class="my-4" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                    <input type="text" placeholder="Имя" class="w-full py-2 px-4" style="outline: none;">
+                                </div>
+                                <div class="my-4" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                    <input type="text" placeholder="Имя" class="w-full py-2 px-4" style="outline: none;">
+                                </div>
+                                </div>
+                                <div class="mt-[20px]">
+                                    <button class="btn-plus relative ml-12 pb-12">
+                                        Добавить имя
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="link-4 py-4 px-8">
+                                        Подать требу
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="md:mt-0 mt-8">
-                            <a href="#" class="py-4 px-8 font-semibold link-4">
-                                Подать требу
-                            </a>
+                    </form>
+                </div>
+                <div class="h-[648px]" style="background-color: #FAFAFA; border: 1px solid #DFDFDE; box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.25); border-radius: 2px;">
+                    <form action="form" class="pl-8">
+                        <div class="h-[150px]">
+                            <h3 class="font-medium text-[40px] pt-10 pb-8 w-[60%] leading-tight">
+                                Оставьте любое посильное пожертвование:
+                            </h3>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="w-[30%] pt-6">
+                                <span class="font-semibold">
+                                    Сумма
+                                </span>
+                               <div>
+                                    <div style="border: 1px solid #C1C1C1; border-radius: 2px;" class="my-4">
+                                        <input type="text" placeholder="Введите сумму" style="outline: none;" class="w-full py-2 px-4">
+                                    </div>
+                               </div>
+                            </div>
+                            <div class="w-[30%] pt-6">
+                                <span class="font-semibold">
+                                    Данные
+                                </span>
+                                <div>
+                                    <div style="border: 1px solid #C1C1C1; border-radius: 2px;" class="my-4">
+                                        <input type="email" placeholder="E-mail" style="outline: none;" class="w-full py-2 px-4">
+                                    </div>
+                                    <div style="border: 1px solid #C1C1C1; border-radius: 2px;" class="my-4">
+                                        <input type="text" placeholder="Имя и фамилия" style="outline: none;" class="w-full py-2 px-4">
+                                    </div>
+                                    <div style="border: 1px solid #C1C1C1; border-radius: 2px;" class="my-4">
+                                        <input type="tel" placeholder="Телефон" style="outline: none;" class="w-full py-2 px-4">
+                                    </div>
+                                    <div class="pt-4">
+                                        <div class="pb-2 flex items-center">
+                                            <input type="checkbox" checked>
+                                            <label class="pl-2 text-xs">
+                                                Согласен с условиями <a href="#">оферты</a>
+                                            </label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input type="checkbox" checked>
+                                            <label class="pl-2 text-xs">
+                                                Согласен на обработку <a href="#">персональных данных</a>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pr-14 w-[30%]">
+                                <span class="font-semibold">
+                                    Литургия особая на всякое прошение за рабов божих:
+                                </span>
+                                <div class="my-4" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                    <input type="text" placeholder="Имя" class="w-full py-2 px-4" style="outline: none;">
+                                </div>
+                                <div class="my-4" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                    <input type="text" placeholder="Имя" class="w-full py-2 px-4" style="outline: none;">
+                                </div>
+                                <div class="my-4" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                    <input type="text" placeholder="Имя" class="w-full py-2 px-4" style="outline: none;">
+                                </div>
+                                <div class="mt-[20px]">
+                                    <button class="btn-plus relative ml-12 pb-12">
+                                        Добавить имя
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center pt-20 items-center -mx-2">
+                            <div class="mx-2">
+                                <button class="py-4 px-8" style="background-color: #373737; color: #ffffff; border-radius: 2px;">
+                                    Назад
+                                </button>
+                            </div>
+                            <div class="mx-2">
+                                <button class="link-4 py-5 px-10" style="border-radius: 2px;">
+                                    Подать требу
+                                </button>
+                            </div>
                         </div>
                     </form>
                 </div>

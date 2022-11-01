@@ -229,3 +229,17 @@ body{
 .mobile-menu__close{
    margin-top: 1.25rem;
 }
+.link-5:hover{
+   background-color: #373737;
+   transition: 0.5s;
+   color: #ffffff;
+}
+.btn-plus::before{
+    content: '';
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    background-image: url(../img/59.svg);
+    top: -5px;
+    right: 123px;
+}
