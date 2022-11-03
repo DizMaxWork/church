@@ -234,12 +234,40 @@ body{
    transition: 0.5s;
    color: #ffffff;
 }
-.btn-plus::before{
-    content: '';
-    position: absolute;
-    height: 32px;
-    width: 32px;
-    background-image: url(../img/59.svg);
-    top: -5px;
-    right: 123px;
+.checkbox-block{
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   border: 1px solid #C1C1C1;
+   border-radius: 2px;
+}
+.checkbox:checked + .red-checkbox-block{
+   margin: 3px;
+   position: absolute;
+   background: #D53E34;
+   width: 10px;
+   height: 10px;
+   border-radius: 2px;
+}
+.radio-border{
+   position: absolute;
+   top: 4px;
+   width: 16px;
+   height: 16px;
+   border: 1px solid #BEBEBE;
+}
+.radio:checked + .radio-inside{
+   position: absolute;
+   background: #FAFAFA;
+   width: 10px;
+   height: 10px;
+   margin: 7px 3px;
+}
+.radio-2:checked + .radio-inside-2{
+   position: absolute;
+   background: #373737;
+   opacity: 0.2;
+   width: 10px;
+   height: 10px;
+   margin: 7px 3px;
 }
