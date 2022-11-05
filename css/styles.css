@@ -2152,6 +2152,10 @@ video {
     width: 23.5%;
   }
 
+  .md\:w-\[94\%\] {
+    width: 94%;
+  }
+
   .md\:max-w-full {
     max-width: 100%;
   }
@@ -2170,6 +2174,10 @@ video {
 
   .md\:justify-start {
     justify-content: flex-start;
+  }
+
+  .md\:justify-end {
+    justify-content: flex-end;
   }
 
   .md\:justify-center {
@@ -2707,6 +2715,10 @@ video {
 
   .lg\:w-\[34\%\] {
     width: 34%;
+  }
+
+  .lg\:w-\[94\%\] {
+    width: 94%;
   }
 
   .lg\:flex-nowrap {
@@ -3483,6 +3495,10 @@ video {
 
   .xxl\:w-\[48\%\] {
     width: 48%;
+  }
+
+  .xxl\:justify-start {
+    justify-content: flex-start;
   }
 
   .xxl\:justify-between {
