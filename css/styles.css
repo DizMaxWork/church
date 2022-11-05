@@ -1116,6 +1116,10 @@ video {
   align-items: baseline;
 }
 
+.items-stretch {
+  align-items: stretch;
+}
+
 .justify-end {
   justify-content: flex-end;
 }
@@ -1424,6 +1428,10 @@ video {
 
 .pr-8 {
   padding-right: 2rem;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
 }
 
 .text-left {
@@ -2955,6 +2963,10 @@ video {
     margin-left: 1rem;
   }
 
+  .xl\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .xl\:block {
     display: block;
   }
@@ -3239,6 +3251,10 @@ video {
     padding-top: 5rem;
   }
 
+  .xl\:pr-14 {
+    padding-right: 3.5rem;
+  }
+
   .xl\:text-9xl {
     font-size: 8rem;
     line-height: 1;
@@ -3495,6 +3511,10 @@ video {
 
   .xxl\:w-\[48\%\] {
     width: 48%;
+  }
+
+  .xxl\:w-\[83\%\] {
+    width: 83%;
   }
 
   .xxl\:justify-start {
