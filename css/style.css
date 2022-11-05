@@ -263,13 +263,9 @@ body{
    height: 10px;
    margin: 7px 3px;
 }
-.radio-2:checked + .radio-inside-2{
-   position: absolute;
+.plate_white .radio:checked + .radio-inside{
    background: #373737;
    opacity: 0.2;
-   width: 10px;
-   height: 10px;
-   margin: 7px 3px;
 }
 .button-delete::before{
    content: '';
@@ -279,4 +275,16 @@ body{
    background-image: url(../img/name-delete.svg);
    bottom: -13px;
    left: 25px;
+}
+.plate{
+   border: 1px solid #C1C1C1; 
+   border-radius: 2px; 
+   background-color: #373737;
+   color: #FAFAFA;
+}
+.plate_white{
+   border: 1px solid #C1C1C1; 
+   border-radius: 2px; 
+   background-color: #FAFAFA;
+   color: #373737;
 }
