@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/vue@next"></script>
     <title>Успений</title>
 </head>
 <body>
@@ -909,7 +910,7 @@
                 </div>
             </div>
         </section>
-        <section class="md:pt-40 pt-24">
+        <section id="customForm" class="md:pt-40 pt-24">
             <div class="container mx-auto px-5">
                 <h2 class="xl:text-[64px] lg:text-[42px] md:text-[40px] text-[24px] font-semibold lg:leading-tight pb-14">
                     ВЫ МОЖЕТЕ ПОДАТЬ ТРЕБУ И ОТЕЦ ДМИТРИЙ ПОМОЛИТСЯ ЗА ВАШИХ БЛИЗКИХ В СТЕНАХ ХРАМА
@@ -2208,5 +2209,21 @@
 </div>
 <script src="js/jquery-js.js"></script>
 <script src="js/main.js"></script>
+
+<script>
+  Vue.createApp({
+    data() {
+      return {
+        message: 'Hello Vue 3!'
+      }
+    },
+    methods: {
+      setMessage(event) {
+        this.message = event.target.value;
+      }
+    }
+  }).mount('#app');
+</script>
+
 </body>
 </html>
