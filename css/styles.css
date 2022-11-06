@@ -1682,6 +1682,10 @@ video {
     width: 77%;
   }
 
+  .sm\:w-\[34\%\] {
+    width: 34%;
+  }
+
   .sm\:justify-end {
     justify-content: flex-end;
   }
