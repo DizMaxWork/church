@@ -234,6 +234,12 @@ body{
    transition: 0.5s;
    color: #ffffff;
 }
+
+.active {
+    background-color: #373737;
+    color: #ffffff;
+}
+
 .checkbox-block{
    position: absolute;
    width: 16px;
@@ -310,4 +316,26 @@ body{
 }
 .slider-for{
    height: 400px;
+}
+
+.service-button {
+    border: 1px solid #C1C1C1;
+    border-radius: 2px;
+}
+
+.service-button.active {
+    background-color: #373737;
+    color: #ffffff;
+}
+
+.action-btn {
+    background: #B5B5B5;
+    border-radius: 2px;
+    color: #ffffff;
+}
+
+.action-btn.active {
+    background: #D53E34;
+    border-radius: 2px;
+    color: #ffffff;
 }

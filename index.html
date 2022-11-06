@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@600;700&display=swap" rel="stylesheet">
     <title>Успений</title>
+    <script src="https://unpkg.com/vue@next"></script>
 </head>
 <body>
 <div>
@@ -103,7 +104,7 @@
             </div>
             <div class="burger__menu">
                 <div>
-                    
+
                 </div>
             </div>
             <div class="mobile-menu__close w-8 ml-auto -mr-2 hidden">
@@ -825,7 +826,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="xl:w-[41%] lg:w-[60%] w-full pb-12 xl:mx-0 lg:mx-auto xl:mt-0 mt-8 form-1" style="background-color: #fff;">
+                    <div class="xl:w-[41%] lg:w-[60%] w-full xxl:h-auto xl:h-[630px] lg:h-[610px] sm:h-[600px] h-[620px] xl:mx-0 lg:mx-auto xl:mt-0 mt-8 form-1" style="background-color: #fff;">
                         <div>
                             <form action="form" class="sm:px-10 px-8">
                                 <h4 class="text-2xl font-semibold pt-10">
@@ -835,23 +836,23 @@
                                     <div class="pb-2">
                                         <span style="color: #000000;">Сумма</span>
                                     </div>
-                                    <div class="flex flex-wrap xxl:w-auto xl:w-[98%] lg:w-auto md:w-[75%]  -mx-2">
-                                        <div class="py-2 px-4 mb-4 mx-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                    <div class="flex justify-between flex-wrap xxl:w-auto xl:w-[98%] lg:w-auto md:w-[75%]">
+                                        <div class="py-2 px-4 mb-4" style="border: 1px solid #C1C1C1; border-radius: 2px;">
                                             <a href="#" class="font-medium text-sm">400 ₽</a>
                                         </div>
-                                        <div class="py-2 px-4 mb-4 mx-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                        <div class="py-2 px-4 mb-4" style="border: 1px solid #C1C1C1; border-radius: 2px;">
                                             <a href="#" class="font-medium text-sm">800 ₽</a>
                                         </div>
-                                        <div class="py-2 px-4 mb-4 mx-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                        <div class="py-2 px-4 mb-4" style="border: 1px solid #C1C1C1; border-radius: 2px;">
                                             <a href="#" class="font-medium text-sm">1 500 ₽</a>
                                         </div>
-                                        <div class="py-2 px-4 mb-4 mx-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                        <div class="py-2 px-4 mb-4" style="border: 1px solid #C1C1C1; border-radius: 2px;">
                                             <a href="#" class="font-medium text-sm">3 000 ₽</a>
                                         </div>
-                                        <div class="py-2 px-4 mb-4 mx-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                        <div class="py-2 px-4 mb-4" style="border: 1px solid #C1C1C1; border-radius: 2px;">
                                             <a href="#" class="font-medium text-sm">5 000 ₽</a>
                                         </div>
-                                        <div class="py-2 pl-4 mb-4 mx-2 xxl:w-[32%] xl:w-[39%] md:w-[30%] sm:w-[32%] w-[183px] xxl:h-auto xl:h-[43px] sm:h-auto h-[42px] " style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                        <div class="py-2 pl-4 xxl:w-[30%] xl:w-[39%] md:w-[30%] sm:w-[32%] w-[44%] xxl:h-auto xl:h-[43px] sm:h-auto h-[42px] xxl:mr-0 xl:mr-auto xxl:ml-0 xl:ml-4 md:mr-0 mr-auto md:ml-0 ml-4" style="border: 1px solid #C1C1C1; border-radius: 2px;">
                                             <input type="text" placeholder="Введите сумму" style="background-color: transparent; outline: none;" class="md:w-auto w-[92%]">
                                         </div>
                                     </div>
@@ -874,7 +875,7 @@
                                     <div class="pt-4">
                                         <div class="pb-2 flex items-center">
                                             <label>
-                                                <div class="relative"> 
+                                                <div class="relative">
                                                     <input type="checkbox" checked class="hidden checkbox">
                                                     <div class="red-checkbox-block cursor-pointer"></div>
                                                     <div class="checkbox-block cursor-pointer"></div>
@@ -886,7 +887,7 @@
                                         </div>
                                         <div class="flex items-center">
                                             <label>
-                                                <div class="relative"> 
+                                                <div class="relative">
                                                     <input type="checkbox" checked class="hidden checkbox">
                                                     <div class="red-checkbox-block cursor-pointer"></div>
                                                     <div class="checkbox-block cursor-pointer"></div>
@@ -909,243 +910,171 @@
                 </div>
             </div>
         </section>
-        <section class="md:pt-40 pt-24">
+        <section id="app" class="md:pt-40 pt-24">
             <div class="container mx-auto px-5">
                 <h2 class="xl:text-[64px] lg:text-[42px] md:text-[40px] text-[24px] font-semibold lg:leading-tight pb-14">
                     ВЫ МОЖЕТЕ ПОДАТЬ ТРЕБУ И ОТЕЦ ДМИТРИЙ ПОМОЛИТСЯ ЗА ВАШИХ БЛИЗКИХ В СТЕНАХ ХРАМА
                 </h2>
                 <div class="pb-6" style="background-color: #FAFAFA; border: 1px solid #DFDFDE; box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.25); border-radius: 2px;">
-                    <form action="form" class="md:pl-8 pl-6">
+                    <div class="md:pl-8 pl-6">
                         <div>
-                            <h3 class="font-medium md:text-[40px] text-[33px] pt-10 pb-8">
+                            <h3 v-if="!isSecondStep" class="font-medium md:text-[40px] text-[33px] pt-10 pb-8">
                                 Выберите требу:
+                            </h3>
+                            <h3 v-else class="font-medium md:text-[40px] text-[33px] pt-10 pb-8">
+                                Оставьте любое посильное пожертвование:
                             </h3>
                         </div>
                         <div class="flex justify-between flex-wrap items-baseline">
-                            <div class="xxl:w-[60%] xl:w-[63%] lg:w-[90%]">
+                            <div v-if="!isSecondStep" class="xxl:w-[60%] xl:w-[63%] lg:w-[90%]">
                                 <div class="font-medium flex -mx-2 pb-6 md:flex-nowrap flex-wrap -my-2">
-                                    <div class="mx-2 px-4 py-2 md:w-auto sm:w-[45%] w-[64%] md:my-0 my-2" style="border: 1px solid #C1C1C1; border-radius: 2px; background-color: #373737; color: #ffffff;">
+                                    <div v-on:click="changeService('Литургия')" :class="{active: service == 'Литургия'}" class="service-button cursor-pointer mx-2 px-4 py-2 md:w-auto sm:w-[45%] w-[64%] md:my-0 my-2">
                                         <button class="sm:text-base text-sm">
                                             Литургия
                                         </button>
-                                    </div>   
-                                    <div class="mx-2 px-4 py-2 link-5 md:w-auto sm:w-[45%] w-[64%] md:my-0 my-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                    </div>
+                                    <div v-on:click="changeService('Сорокоуст')" :class="{active: service == 'Сорокоуст'}" class="service-button cursor-pointer mx-2 px-4 py-2 link-5 md:w-auto sm:w-[45%] w-[64%] md:my-0 my-2">
                                         <button class="sm:text-base text-sm">
                                             Сорокоуст (40 литургий)
                                         </button>
-                                    </div>  
-                                    <div class="mx-2 px-4 py-2 link-5 md:w-auto sm:w-[45%] w-[64%] md:my-0 my-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                    </div>
+                                    <div v-on:click="changeService('Молебен')" :class="{active: service == 'Молебен'}" class="service-button cursor-pointer mx-2 px-4 py-2 link-5 md:w-auto sm:w-[45%] w-[64%] md:my-0 my-2">
                                         <button class="sm:text-base text-sm">
                                             Молебен
                                         </button>
-                                    </div>  
-                                    <div class="mx-2 px-4 py-2 link-5 md:w-auto sm:w-[45%] w-[64%] md:my-0 my-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                    </div>
+                                    <div v-on:click="changeService('Панихида')" :class="{active: service == 'Панихида'}" class="service-button cursor-pointer mx-2 px-4 py-2 link-5 md:w-auto sm:w-[45%] w-[64%] md:my-0 my-2">
                                         <button class="sm:text-base text-sm">
                                             Панихида
                                         </button>
-                                    </div>   
+                                    </div>
                                 </div>
                                 <div class="xxl:w-[83%] xl:w-[90%] sm:w-auto w-[90%]">
-                                    <p class="font-medium pb-10">
-                                        Литургия – это главнейшее христианское богослужение.Сначала во время проскомидии из просфор вынимается частичка за каждое имя, написанное в поданных накануне требах. Затем во время обедни совершается символическое соединение тела и крови Господа (просфор и красного вина). Потом прихожане причащаются.
+                                    <p v-if="service == 'Литургия'" class="font-medium pb-10">
+                                        Литургия – это главнейшее христианское богослужение.Сначала во время проскомидии из просфор вынимается частичка за каждое имя, написанное в поданных накануне требах. Затем во время обедни совершается символическое соединение тела и крови Господа (просфор и
+                                        красного вина). Потом прихожане причащаются.
+                                    </p>
+                                    <p v-if="service == 'Сорокоуст'" class="font-medium pb-10">
+                                        Сорокоуст – упоминание имени в течение 40 литургий.
+                                    </p>
+                                    <p v-if="service == 'Молебен'" class="font-medium pb-10">
+                                        Молебен – краткое богослужение просительного или благодарственного характера.
+                                    </p>
+                                    <p v-if="service == 'Панихида'" class="font-medium pb-10">
+                                        Панихида – за упокойная служба.
                                     </p>
                                 </div>
-                                <div>
+                                <div v-if="service == 'Литургия' || service == 'Сорокоуст'">
                                     <div>
                                         <h3 class="font-semibold text-2xl pb-6">
                                             Упоминание:
                                         </h3>
                                         <div class="flex lg:flex-nowrap flex-wrap -mx-2">
                                             <div class="flex h-[44px] md:w-auto w-full">
-                                                <div class="mx-2 px-4 py-2 link-5 md:w-auto sm:w-[25%] w-[37%]" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                                    <label class="cursor-pointer">
+                                                <div :class="{active: serviceKind == 'О здравии'}" class="mx-2 link-5 md:w-auto sm:w-[25%] w-[37%]" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                                    <label class="flex items-center justify-center cursor-pointer px-4 py-2">
                                                         <div class="xxl:text-base xl:text-sm xxl:mt-0 xl:mt-0.5">
                                                             О здравии
                                                         </div>
                                                         <div>
-                                                            <input type="radio" name="1" value="Литургия" class="hidden">
+                                                            <input v-model="serviceKind" type="radio" name="1" value="О здравии" class="hidden">
                                                         </div>
                                                     </label>
                                                 </div>
-                                                <div class="mx-2 px-4 py-2 link-5 md:w-auto sm:w-[29%] w-[45%]" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                                    <label class="cursor-pointer">
+                                                <div :class="{active: serviceKind == 'Об упокоении'}" class="mx-2 link-5 md:w-auto sm:w-[29%] w-[45%]" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                                    <label class="flex items-center justify-center cursor-pointer px-4 py-2">
                                                         <div class="xxl:text-base xl:text-sm xxl:mt-0 xl:mt-0.5">
                                                             Об упокоении
                                                         </div>
                                                         <div>
-                                                            <input type="radio" name="2" value="Об упокоении" class="hidden">
+                                                            <input v-model="serviceKind" type="radio" name="1" value="Об упокоении" class="hidden">
                                                         </div>
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="mx-2 px-4 py-2 xxl:w-[60%] lg:w-[60%] md:w-[70%] sm:w-[57%] w-[87%] lg:mt-0 mt-4 plate hidden">
+                                            <div :class="{plate_white: serviceKind == '' || serviceKind == 'О здравии' || serviceKind == 'Об упокоении'}"
+                                                 class="mx-2 px-4 py-2 xxl:w-[60%] lg:w-[60%] md:w-[70%] sm:w-[57%] w-[87%] lg:mt-0 mt-4 plate">
                                                 <div class="">
-                                                    <label class="xxl:text-base xl:text-sm">
+                                                    <div class="xxl:text-base xl:text-sm">
                                                         Особая
-                                                    </label>
+                                                    </div>
                                                     <div class="md:w-[8%] w-[16%] md:pt-2 pt-1" style="border-bottom: 2px solid #BEBEBE;"></div>
                                                 </div>
-                                                <div class="flex justify-between pt-2 -my-1 md:flex-nowrap flex-wrap"> 
+                                                <div class="flex justify-between pt-2 -my-1 md:flex-nowrap flex-wrap">
                                                     <div>
                                                         <div class="py-1">
-                                                                <label>
-                                                                   <div class="relative">
-                                                                        <input type="radio" name="1" value="О болящих" class="hidden radio">
-                                                                        <div class="radio-inside rounded-full cursor-pointer"></div>
-                                                                        <div class="radio-border rounded-full cursor-pointer"></div>
-                                                                   </div>
-                                                                    <span class="pl-6 xxl:text-base text-sm">
+                                                            <label class="cursor-pointer">
+                                                                <div class="relative">
+                                                                    <input v-model="serviceKind" type="radio" name="1" value="О болящих" class="hidden radio">
+                                                                    <div class="radio-inside rounded-full cursor-pointer"></div>
+                                                                    <div class="radio-border rounded-full cursor-pointer"></div>
+                                                                </div>
+                                                                <span class="pl-6 xxl:text-base text-sm">
                                                                         О болящих
                                                                     </span>
-                                                                </label>
+                                                            </label>
                                                         </div>
                                                         <div class="py-1">
-                                                            <label>
+                                                            <label class="cursor-pointer">
                                                                 <div class="relative">
-                                                                     <input type="radio" name="1" value="О путешествующих" class="hidden radio">
-                                                                     <div class="radio-inside rounded-full cursor-pointer"></div>
-                                                                     <div class="radio-border rounded-full cursor-pointer"></div>
+                                                                    <input v-model="serviceKind" type="radio" name="1" value="О путешествующих" class="hidden radio">
+                                                                    <div class="radio-inside rounded-full cursor-pointer"></div>
+                                                                    <div class="radio-border rounded-full cursor-pointer"></div>
                                                                 </div>
-                                                                 <span class="pl-6 xxl:text-base text-sm">
+                                                                <span class="pl-6 xxl:text-base text-sm">
                                                                      О путешествующих
                                                                  </span>
-                                                             </label>
+                                                            </label>
                                                         </div>
                                                         <div class="py-1">
-                                                            <label>
+                                                            <label class="cursor-pointer">
                                                                 <div class="relative">
-                                                                     <input type="radio" name="1" value="На всякое прошение" class="hidden radio">
-                                                                     <div class="radio-inside rounded-full cursor-pointer"></div>
-                                                                     <div class="radio-border rounded-full cursor-pointer"></div>
+                                                                    <input v-model="serviceKind" type="radio" name="1" value="На всякое прошение" class="hidden radio">
+                                                                    <div class="radio-inside rounded-full cursor-pointer"></div>
+                                                                    <div class="radio-border rounded-full cursor-pointer"></div>
                                                                 </div>
-                                                                 <span class="pl-6 xxl:text-base text-sm">
+                                                                <span class="pl-6 xxl:text-base text-sm">
                                                                     На всякое прошение
                                                                  </span>
-                                                             </label>
+                                                            </label>
                                                         </div>
                                                     </div>
                                                     <div>
                                                         <div class="py-1">
-                                                            <label>
+                                                            <label class="cursor-pointer">
                                                                 <div class="relative">
-                                                                     <input type="radio" name="1" value="Прошение на доброе дело" class="hidden radio">
-                                                                     <div class="radio-inside rounded-full cursor-pointer"></div>
-                                                                     <div class="radio-border rounded-full cursor-pointer"></div>
+                                                                    <input v-model="serviceKind" type="radio" name="1" value="Прошение на доброе дело" class="hidden radio">
+                                                                    <div class="radio-inside rounded-full cursor-pointer"></div>
+                                                                    <div class="radio-border rounded-full cursor-pointer"></div>
                                                                 </div>
-                                                                 <span class="pl-6 xxl:text-base text-sm">
+                                                                <span class="pl-6 xxl:text-base text-sm">
                                                                     Прошение на доброе дело
                                                                  </span>
-                                                             </label>
+                                                            </label>
                                                         </div>
                                                         <div class="py-1">
-                                                            <label>
+                                                            <label class="cursor-pointer">
                                                                 <div class="relative">
-                                                                     <input type="radio" name="1" value="Благодарственное прошение" class="hidden radio">
-                                                                     <div class="radio-inside rounded-full cursor-pointer"></div>
-                                                                     <div class="radio-border rounded-full cursor-pointer"></div>
+                                                                    <input v-model="serviceKind" type="radio" name="1" value="Благодарственное прошение" class="hidden radio">
+                                                                    <div class="radio-inside rounded-full cursor-pointer"></div>
+                                                                    <div class="radio-border rounded-full cursor-pointer"></div>
                                                                 </div>
-                                                                 <span class="pl-6 xxl:text-base text-sm">
+                                                                <span class="pl-6 xxl:text-base text-sm">
                                                                     Благодарственное прошение
                                                                  </span>
-                                                             </label>
+                                                            </label>
                                                         </div>
                                                         <div class="py-1">
-                                                            <label>
+                                                            <label class="cursor-pointer">
                                                                 <div class="relative">
-                                                                     <input type="radio" name="1" value="О заключенных" class="hidden radio">
-                                                                     <div class="radio-inside rounded-full cursor-pointer"></div>
-                                                                     <div class="radio-border rounded-full cursor-pointer"></div>
+                                                                    <input v-model="serviceKind" type="radio" name="1" value="О заключенных" class="hidden radio">
+                                                                    <div class="radio-inside rounded-full cursor-pointer"></div>
+                                                                    <div class="radio-border rounded-full cursor-pointer"></div>
                                                                 </div>
-                                                                 <span class="pl-6 xxl:text-base text-sm">
+                                                                <span class="pl-6 xxl:text-base text-sm">
                                                                     О заключенных
                                                                  </span>
-                                                             </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mx-2 px-4 py-2 xxl:w-[60%] lg:w-[60%] md:w-[70%] sm:w-[57%] w-[87%] lg:mt-0 mt-4 plate plate_white">
-                                                <div class="">
-                                                    <label class="xxl:text-base xl:text-sm">
-                                                        Особая
-                                                    </label>
-                                                    <div class="md:w-[8%] w-[16%] md:pt-2 pt-1" style="border-bottom: 2px solid #BEBEBE;"></div>
-                                                </div>
-                                                <div class="flex justify-between pt-2 -my-1 md:flex-nowrap flex-wrap"> 
-                                                    <div>
-                                                        <div class="py-1">
-                                                                <label>
-                                                                   <div class="relative">
-                                                                        <input type="radio" name="1" value="О болящих" class="hidden radio">
-                                                                        <div class="radio-inside rounded-full cursor-pointer"></div>
-                                                                        <div class="radio-border rounded-full cursor-pointer"></div>
-                                                                   </div>
-                                                                    <span class="pl-6 xxl:text-base text-sm">
-                                                                        О болящих
-                                                                    </span>
-                                                                </label>
-                                                        </div>
-                                                        <div class="py-1">
-                                                            <label>
-                                                                <div class="relative">
-                                                                     <input type="radio" name="1" value="О путешествующих" class="hidden radio">
-                                                                     <div class="radio-inside rounded-full cursor-pointer"></div>
-                                                                     <div class="radio-border rounded-full cursor-pointer"></div>
-                                                                </div>
-                                                                 <span class="pl-6 xxl:text-base text-sm">
-                                                                     О путешествующих
-                                                                 </span>
-                                                             </label>
-                                                        </div>
-                                                        <div class="py-1">
-                                                            <label>
-                                                                <div class="relative">
-                                                                     <input type="radio" name="1" value="На всякое прошение" class="hidden radio">
-                                                                     <div class="radio-inside rounded-full cursor-pointer"></div>
-                                                                     <div class="radio-border rounded-full cursor-pointer"></div>
-                                                                </div>
-                                                                 <span class="pl-6 xxl:text-base text-sm">
-                                                                    На всякое прошение
-                                                                 </span>
-                                                             </label>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="py-1">
-                                                            <label>
-                                                                <div class="relative">
-                                                                     <input type="radio" name="1" value="Прошение на доброе дело" class="hidden radio">
-                                                                     <div class="radio-inside rounded-full cursor-pointer"></div>
-                                                                     <div class="radio-border rounded-full cursor-pointer"></div>
-                                                                </div>
-                                                                 <span class="pl-6 xxl:text-base text-sm">
-                                                                    Прошение на доброе дело
-                                                                 </span>
-                                                             </label>
-                                                        </div>
-                                                        <div class="py-1">
-                                                            <label>
-                                                                <div class="relative">
-                                                                     <input type="radio" name="1" value="Благодарственное прошение" class="hidden radio">
-                                                                     <div class="radio-inside rounded-full cursor-pointer"></div>
-                                                                     <div class="radio-border rounded-full cursor-pointer"></div>
-                                                                </div>
-                                                                 <span class="pl-6 xxl:text-base text-sm">
-                                                                    Благодарственное прошение
-                                                                 </span>
-                                                             </label>
-                                                        </div>
-                                                        <div class="py-1">
-                                                            <label>
-                                                                <div class="relative">
-                                                                     <input type="radio" name="1" value="О заключенных" class="hidden radio">
-                                                                     <div class="radio-inside rounded-full cursor-pointer"></div>
-                                                                     <div class="radio-border rounded-full cursor-pointer"></div>
-                                                                </div>
-                                                                 <span class="pl-6 xxl:text-base text-sm">
-                                                                    О заключенных
-                                                                 </span>
-                                                             </label>
+                                                            </label>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1154,133 +1083,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="pr-10 xl:pt-0 pt-8 xxl:w-[38%] xl:w-[37%] lg:w-[60%] md:w-[80%]">
-                                <div>
-                                    <h3 class="font-semibold text-2xl">
-                                        Впишите имена:
-                                    </h3>
-                                </div>
-                                <div class="md:pt-0 pt-2">
-                                    <p>
-                                        Литургия особая на всякое прошение за рабов божих:
-                                    </p>
-                                </div>
-                                <div class="xl:w-auto md:w-[83%] sm:w-[66%] w-[288px]" style="background-color: #FFFFFF;">
-                                    <div class="my-4 flex items-center justify-between" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                        <div>
-                                            <input type="text" placeholder="Имя" class="w-full py-2 px-4" style="outline: none;">
-                                        </div>
-                                        <div class="sm:text-sm text-xs pr-2 xxl:w-[28%] xl:w-[36%] md:w-[34%] sm:w-[64%] w-[60%] hidden">
-                                            <button class="py-1 px-4" style="background-color: #B5B5B5; border-radius: 2px; color: #ffffff;">
-                                                Добавить имя
-                                            </button>
-                                        </div>
-                                        <div class="sm:text-sm text-xs pr-2 xxl:w-[28%] xl:w-[36%] md:w-[34%] sm:w-[64%] w-[60%]">
-                                            <button class="link-4 py-1 px-4">
-                                                Добавить имя
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h3 class="font-semibold text-[24px]">
-                                        Вписанные имена:
-                                    </h3>
-                                </div>
-                                <div class="flex flex-wrap xxl:justify-between pt-3 -my-1 xl:pr-14">
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константин</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                </div> 
-                            </div>
-                            <div class="mt-8 flex justify-center xl:w-[97%] md:w-[98%] sm:w-[95%] w-[93%]">
-                                <button class="link-4 py-4 px-8" style="border-radius: 2px;">
-                                    Подать требу
-                                </button>
-                            </div>
-                            <div class="mt-8 flex justify-center xl:w-[97%] md:w-[98%] sm:w-[95%] w-[93%] hidden">
-                                <button class="ml-12 py-4 px-8" style="background-color: #B5B5B5; border-radius: 2px; color: #ffffff;">
-                                    Подать требу
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="pb-6" style="background-color: #FAFAFA; border: 1px solid #DFDFDE; box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.25); border-radius: 2px;">
-                    <form action="form" class="md:pl-8 pl-6">
-                        <div>
-                            <h3 class="font-medium md:text-[40px] sm:text-[33px] text-[20px] pt-10 md:pb-8">
-                                Оставьте любое посильное пожертвование:
-                            </h3>
-                        </div>
-                        <div class="flex justify-between flex-wrap items-stretch">
-                            <div class="xxl:w-[58%] xl:w-[60%] md:w-[90%] flex justify-between md:flex-nowrap flex-wrap xl:mt-2">
+                            <div v-if="isSecondStep" class="xxl:w-[58%] xl:w-[60%] md:w-[90%] flex justify-between md:flex-nowrap flex-wrap xl:mt-2">
                                 <div class="xl:w-[48%] md:w-[43%] sm:w-[57%] w-[288px] pt-6">
                                     <span class="font-semibold">
                                         Сумма
                                     </span>
-                                   <div>
+                                    <div>
                                         <div style="border: 1px solid #C1C1C1; border-radius: 2px;" class="my-4">
-                                            <input type="text" placeholder="Введите сумму" style="outline: none;" class="w-full py-2 px-4">
+                                            <input v-model="sum" type="number" placeholder="Введите сумму" style="outline: none;" class="w-full py-2 px-4">
                                         </div>
-                                   </div>
+                                    </div>
                                 </div>
                                 <div class="xl:w-[48%] md:w-[43%] pt-6">
                                     <span class="font-semibold">
@@ -1288,19 +1100,19 @@
                                     </span>
                                     <div>
                                         <div style="border: 1px solid #C1C1C1; border-radius: 2px;" class="my-4">
-                                            <input type="email" placeholder="E-mail" style="outline: none;" class="w-full py-2 px-4">
+                                            <input v-model="email" type="email" placeholder="E-mail" style="outline: none;" class="w-full py-2 px-4">
                                         </div>
                                         <div style="border: 1px solid #C1C1C1; border-radius: 2px;" class="my-4">
-                                            <input type="text" placeholder="Имя и фамилия" style="outline: none;" class="w-full py-2 px-4">
+                                            <input v-model="fio" type="text" placeholder="Имя и фамилия" style="outline: none;" class="w-full py-2 px-4">
                                         </div>
                                         <div style="border: 1px solid #C1C1C1; border-radius: 2px;" class="my-4">
-                                            <input type="tel" placeholder="Телефон" style="outline: none;" class="w-full py-2 px-4">
+                                            <input v-model="phone" type="tel" placeholder="Телефон" style="outline: none;" class="w-full py-2 px-4">
                                         </div>
                                         <div class="sm:pt-4 pt-2">
                                             <div class="pb-2 flex items-center">
                                                 <label>
-                                                    <div class="relative"> 
-                                                        <input type="checkbox" checked class="hidden checkbox">
+                                                    <div class="relative">
+                                                        <input v-model="agreeOfert" type="checkbox" class="hidden checkbox">
                                                         <div class="red-checkbox-block cursor-pointer"></div>
                                                         <div class="checkbox-block cursor-pointer"></div>
                                                     </div>
@@ -1311,8 +1123,8 @@
                                             </div>
                                             <div class="flex items-center">
                                                 <label>
-                                                    <div class="relative"> 
-                                                        <input type="checkbox" checked class="hidden checkbox">
+                                                    <div class="relative">
+                                                        <input v-model="agreePersonal" type="checkbox" checked class="hidden checkbox">
                                                         <div class="red-checkbox-block cursor-pointer"></div>
                                                         <div class="checkbox-block cursor-pointer"></div>
                                                     </div>
@@ -1325,366 +1137,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="pr-10 xl:pt-0 pt-8 xxl:w-[38%] xl:w-[37%] lg:w-[60%] md:w-[80%]">
+                            <div v-if="service == 'Сорокоуст'" class="pr-10 xl:pt-0 pt-8 xxl:w-[38%] xl:w-[37%] lg:w-[60%] md:w-[80%]">
                                 <div>
                                     <h3 class="font-semibold text-2xl">
-                                        Впишите имена:
-                                    </h3>
-                                </div>
-                                <div class="md:pt-0 pt-2">
-                                    <p>
-                                        Литургия особая на всякое прошение за рабов божих:
-                                    </p>
-                                </div>
-                                <div class="xl:w-auto md:w-[83%] sm:w-[66%] w-[288px]" style="background-color: #FFFFFF;">
-                                    <div class="my-4 flex items-center justify-between" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                        <div>
-                                            <input type="text" placeholder="Имя" class="w-full py-2 px-4" style="outline: none;">
-                                        </div>
-                                        <div class="sm:text-sm text-xs pr-2 xxl:w-[28%] xl:w-[36%] md:w-[34%] sm:w-[64%] w-[60%] hidden">
-                                            <button class="py-1 px-4" style="background-color: #B5B5B5; border-radius: 2px; color: #ffffff;">
-                                                Добавить имя
-                                            </button>
-                                        </div>
-                                        <div class="sm:text-sm text-xs pr-2 xxl:w-[28%] xl:w-[36%] md:w-[34%] sm:w-[64%] w-[60%]">
-                                            <button class="link-4 py-1 px-4">
-                                                Добавить имя
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h3 class="font-semibold text-[24px]">
-                                        Вписанные имена:
-                                    </h3>
-                                </div>
-                                <div class="flex flex-wrap xxl:justify-between pt-3 -my-1 xl:pr-14">
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константин</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                        <div class="flex justify-center md:pt-20 pt-12 md:w-auto w-[95%] items-center -mx-2">
-                            <div class="mx-2">
-                                <button class="sm:py-4 py-3 sm:px-8 px-4" style="background-color: #373737; color: #ffffff; border-radius: 2px;">
-                                    Назад
-                                </button>
-                            </div>
-                            <div class="mx-2">
-                                <button class="link-4 lg:py-5 py-4 lg:px-10 px-4" style="border-radius: 2px;">
-                                    Подать требу
-                                </button>
-                            </div>
-                            <div>
-                                <button class="ml-12 lg:py-5 py-4 lg:px-10 px-4 hidden" style="background-color: #B5B5B5; border-radius: 2px; color: #ffffff;">
-                                    Подать требу
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="pb-6" style="background-color: #FAFAFA; border: 1px solid #DFDFDE; box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.25); border-radius: 2px;">
-                    <form action="form" class="md:pl-8 pl-6">
-                        <div>
-                            <h3 class="font-medium md:text-[40px] text-[33px] pt-10 pb-8">
-                                Выберите требу:
-                            </h3>
-                        </div>
-                        <div class="flex justify-between flex-wrap items-baseline">
-                            <div class="xxl:w-[60%] xl:w-[63%] lg:w-[90%]">
-                                <div class="font-medium flex -mx-2 pb-6 md:flex-nowrap flex-wrap -my-2">
-                                    <div class="mx-2 px-4 py-2 link-5 md:w-auto sm:w-[45%] w-[64%] md:my-0 my-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                        <button class="sm:text-base text-sm">
-                                            Литургия
-                                        </button>
-                                    </div>   
-                                    <div class="mx-2 px-4 py-2 md:w-auto sm:w-[45%] w-[64%] md:my-0 my-2" style="border: 1px solid #C1C1C1; border-radius: 2px; background-color: #373737; color: #ffffff;">
-                                        <button class="sm:text-base text-sm">
-                                            Сорокоуст (40 литургий)
-                                        </button>
-                                    </div>  
-                                    <div class="mx-2 px-4 py-2 link-5 md:w-auto sm:w-[45%] w-[64%] md:my-0 my-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                        <button class="sm:text-base text-sm">
-                                            Молебен
-                                        </button>
-                                    </div>  
-                                    <div class="mx-2 px-4 py-2 link-5 md:w-auto sm:w-[45%] w-[64%] md:my-0 my-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                        <button class="sm:text-base text-sm">
-                                            Панихида
-                                        </button>
-                                    </div>   
-                                </div>
-                                <div class="xxl:w-auto xl:w-[90%] sm:w-auto w-[90%]">
-                                    <p class="font-medium pb-10">
-                                        Сорокоуст – упоминание имени в течение 40 литургий.
-                                    </p>
-                                </div>
-                                <div>
-                                    <div>
-                                        <h3 class="font-semibold text-2xl pb-6">
-                                            Упоминание:
-                                        </h3>
-                                        <div class="flex lg:flex-nowrap flex-wrap -mx-2">
-                                            <div class="flex h-[44px] md:w-auto w-full">
-                                                <div class="mx-2 px-4 py-2 link-5 md:w-auto sm:w-[25%] w-[37%]" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                                    <label class="cursor-pointer">
-                                                        <div class="xxl:text-base xl:text-sm xxl:mt-0 xl:mt-0.5">
-                                                            О здравии
-                                                        </div>
-                                                        <div>
-                                                            <input type="radio" name="1" value="Литургия" class="hidden">
-                                                        </div>
-                                                    </label>
-                                                </div>
-                                                <div class="mx-2 px-4 py-2 link-5 md:w-auto sm:w-[29%] w-[45%]" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                                    <label class="cursor-pointer">
-                                                        <div class="xxl:text-base xl:text-sm xxl:mt-0 xl:mt-0.5">
-                                                            Об упокоении
-                                                        </div>
-                                                        <div>
-                                                            <input type="radio" name="2" value="Об упокоении" class="hidden">
-                                                        </div>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="mx-2 px-4 py-2 xxl:w-[60%] lg:w-[60%] md:w-[70%] sm:w-[57%] w-[87%] lg:mt-0 mt-4 plate">
-                                                <div>
-                                                    <label class="xxl:text-base xl:text-sm">
-                                                        Особая
-                                                    </label>
-                                                    <div class="md:w-[8%] w-[16%] md:pt-2 pt-1" style="border-bottom: 2px solid #BEBEBE;"></div>
-                                                </div>
-                                                <div class="flex justify-between pt-2 -my-1 md:flex-nowrap flex-wrap"> 
-                                                    <div>
-                                                        <div class="py-1">
-                                                                <label>
-                                                                   <div class="relative">
-                                                                        <input type="radio" name="1" value="О болящих" class="hidden radio">
-                                                                        <div class="radio-inside rounded-full cursor-pointer"></div>
-                                                                        <div class="radio-border rounded-full cursor-pointer"></div>
-                                                                   </div>
-                                                                    <span class="pl-6 xxl:text-base text-sm">
-                                                                        О болящих
-                                                                    </span>
-                                                                </label>
-                                                        </div>
-                                                        <div class="py-1">
-                                                            <label>
-                                                                <div class="relative">
-                                                                     <input type="radio" name="1" value="О путешествующих" class="hidden radio">
-                                                                     <div class="radio-inside rounded-full cursor-pointer"></div>
-                                                                     <div class="radio-border rounded-full cursor-pointer"></div>
-                                                                </div>
-                                                                 <span class="pl-6 xxl:text-base text-sm">
-                                                                     О путешествующих
-                                                                 </span>
-                                                             </label>
-                                                        </div>
-                                                        <div class="py-1">
-                                                            <label>
-                                                                <div class="relative">
-                                                                     <input type="radio" name="1" value="На всякое прошение" class="hidden radio">
-                                                                     <div class="radio-inside rounded-full cursor-pointer"></div>
-                                                                     <div class="radio-border rounded-full cursor-pointer"></div>
-                                                                </div>
-                                                                 <span class="pl-6 xxl:text-base text-sm">
-                                                                    На всякое прошение
-                                                                 </span>
-                                                             </label>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="py-1">
-                                                            <label>
-                                                                <div class="relative">
-                                                                     <input type="radio" name="1" value="Прошение на доброе дело" class="hidden radio">
-                                                                     <div class="radio-inside rounded-full cursor-pointer"></div>
-                                                                     <div class="radio-border rounded-full cursor-pointer"></div>
-                                                                </div>
-                                                                 <span class="pl-6 xxl:text-base text-sm">
-                                                                    Прошение на доброе дело
-                                                                 </span>
-                                                             </label>
-                                                        </div>
-                                                        <div class="py-1">
-                                                            <label>
-                                                                <div class="relative">
-                                                                     <input type="radio" name="1" value="Благодарственное прошение" class="hidden radio">
-                                                                     <div class="radio-inside rounded-full cursor-pointer"></div>
-                                                                     <div class="radio-border rounded-full cursor-pointer"></div>
-                                                                </div>
-                                                                 <span class="pl-6 xxl:text-base text-sm">
-                                                                    Благодарственное прошение
-                                                                 </span>
-                                                             </label>
-                                                        </div>
-                                                        <div class="py-1">
-                                                            <label>
-                                                                <div class="relative">
-                                                                     <input type="radio" name="1" value="О заключенных" class="hidden radio">
-                                                                     <div class="radio-inside rounded-full cursor-pointer"></div>
-                                                                     <div class="radio-border rounded-full cursor-pointer"></div>
-                                                                </div>
-                                                                 <span class="pl-6 xxl:text-base text-sm">
-                                                                    О заключенных
-                                                                 </span>
-                                                             </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mx-2 px-4 py-2 xxl:w-[60%] lg:w-[60%] md:w-[70%] sm:w-[57%] w-[87%] lg:mt-0 mt-4 plate plate_white hidden">
-                                                <div class="">
-                                                    <label class="xxl:text-base xl:text-sm">
-                                                        Особая
-                                                    </label>
-                                                    <div class="md:w-[8%] w-[16%] md:pt-2 pt-1" style="border-bottom: 2px solid #BEBEBE;"></div>
-                                                </div>
-                                                <div class="flex justify-between pt-2 -my-1 md:flex-nowrap flex-wrap"> 
-                                                    <div>
-                                                        <div class="py-1">
-                                                                <label>
-                                                                   <div class="relative">
-                                                                        <input type="radio" name="1" value="О болящих" class="hidden radio">
-                                                                        <div class="radio-inside rounded-full cursor-pointer"></div>
-                                                                        <div class="radio-border rounded-full cursor-pointer"></div>
-                                                                   </div>
-                                                                    <span class="pl-6 xxl:text-base text-sm">
-                                                                        О болящих
-                                                                    </span>
-                                                                </label>
-                                                        </div>
-                                                        <div class="py-1">
-                                                            <label>
-                                                                <div class="relative">
-                                                                     <input type="radio" name="1" value="О путешествующих" class="hidden radio">
-                                                                     <div class="radio-inside rounded-full cursor-pointer"></div>
-                                                                     <div class="radio-border rounded-full cursor-pointer"></div>
-                                                                </div>
-                                                                 <span class="pl-6 xxl:text-base text-sm">
-                                                                     О путешествующих
-                                                                 </span>
-                                                             </label>
-                                                        </div>
-                                                        <div class="py-1">
-                                                            <label>
-                                                                <div class="relative">
-                                                                     <input type="radio" name="1" value="На всякое прошение" class="hidden radio">
-                                                                     <div class="radio-inside rounded-full cursor-pointer"></div>
-                                                                     <div class="radio-border rounded-full cursor-pointer"></div>
-                                                                </div>
-                                                                 <span class="pl-6 xxl:text-base text-sm">
-                                                                    На всякое прошение
-                                                                 </span>
-                                                             </label>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="py-1">
-                                                            <label>
-                                                                <div class="relative">
-                                                                     <input type="radio" name="1" value="Прошение на доброе дело" class="hidden radio">
-                                                                     <div class="radio-inside rounded-full cursor-pointer"></div>
-                                                                     <div class="radio-border rounded-full cursor-pointer"></div>
-                                                                </div>
-                                                                 <span class="pl-6 xxl:text-base text-sm">
-                                                                    Прошение на доброе дело
-                                                                 </span>
-                                                             </label>
-                                                        </div>
-                                                        <div class="py-1">
-                                                            <label>
-                                                                <div class="relative">
-                                                                     <input type="radio" name="1" value="Благодарственное прошение" class="hidden radio">
-                                                                     <div class="radio-inside rounded-full cursor-pointer"></div>
-                                                                     <div class="radio-border rounded-full cursor-pointer"></div>
-                                                                </div>
-                                                                 <span class="pl-6 xxl:text-base text-sm">
-                                                                    Благодарственное прошение
-                                                                 </span>
-                                                             </label>
-                                                        </div>
-                                                        <div class="py-1">
-                                                            <label>
-                                                                <div class="relative">
-                                                                     <input type="radio" name="1" value="О заключенных" class="hidden radio">
-                                                                     <div class="radio-inside rounded-full cursor-pointer"></div>
-                                                                     <div class="radio-border rounded-full cursor-pointer"></div>
-                                                                </div>
-                                                                 <span class="pl-6 xxl:text-base text-sm">
-                                                                    О заключенных
-                                                                 </span>
-                                                             </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sm:pr-14 pr-4 xl:pt-0 pt-8 xxl:w-[38%] xl:w-[37%] lg:w-[60%] md:w-[80%] w-full">
-                                <div>
-                                    <h3 class="font-semibold text-2xl">
-                                        Впишите имена:
+                                        Впишите имя:
                                     </h3>
                                 </div>
                                 <div class="md:pt-0 pt-2">
@@ -1695,315 +1151,76 @@
                                 <div class="xl:w-auto md:w-[83%] sm:w-[66%] w-[288px]" style="background-color: #FFFFFF;">
                                     <div class="my-4 flex items-center justify-between" style="border: 1px solid #C1C1C1; border-radius: 2px;">
                                         <div>
-                                            <input type="text" placeholder="Имя" class="w-full py-2 px-4" style="outline: none;">
+                                            <input v-model="singleName" type="text" placeholder="Имя" class="w-full py-2 px-4" style="outline: none;">
                                         </div>
                                     </div>
-                                </div>  
-                            </div>
-                            <div class="mt-8 flex justify-center xl:w-[97%] md:w-[98%] sm:w-[95%] w-[93%]">
-                                <button class="link-4 py-4 px-8" style="border-radius: 2px;">
-                                    Подать требу
-                                </button>
-                            </div>
-                            <div class="mt-8 flex justify-center xl:w-[97%] md:w-[98%] sm:w-[95%] w-[93%] hidden">
-                                <button class="ml-12 py-4 px-8" style="background-color: #B5B5B5; border-radius: 2px; color: #ffffff;">
-                                    Подать требу
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="pb-6" style="background-color: #FAFAFA; border: 1px solid #DFDFDE; box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.25); border-radius: 2px;">
-                    <form action="form" class="md:pl-8 pl-6">
-                        <div>
-                            <h3 class="font-medium md:text-[40px] text-[33px] pt-10 pb-8">
-                                Выберите требу:
-                            </h3>
-                        </div>
-                        <div class="flex justify-between flex-wrap items-baseline">
-                            <div class="xxl:w-[60%] xl:w-[63%] lg:w-[90%]">
-                                <div class="font-medium flex -mx-2 pb-6 md:flex-nowrap flex-wrap -my-2">
-                                    <div class="mx-2 px-4 py-2 link-5 md:w-auto sm:w-[45%] w-[64%] md:my-0 my-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                        <button class="sm:text-base text-sm">
-                                            Литургия
-                                        </button>
-                                    </div>   
-                                    <div class="mx-2 px-4 py-2 link-5 md:w-auto sm:w-[45%] w-[64%] md:my-0 my-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                        <button class="sm:text-base text-sm">
-                                            Сорокоуст (40 литургий)
-                                        </button>
-                                    </div>  
-                                    <div class="mx-2 px-4 py-2 md:w-auto sm:w-[45%] w-[64%] md:my-0 my-2" style="border: 1px solid #C1C1C1; border-radius: 2px; background-color: #373737; color: #ffffff;">
-                                        <button class="sm:text-base text-sm">
-                                            Молебен
-                                        </button>
-                                    </div>  
-                                    <div class="mx-2 px-4 py-2 link-5 md:w-auto sm:w-[45%] w-[64%] md:my-0 my-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                        <button class="sm:text-base text-sm">
-                                            Панихида
-                                        </button>
-                                    </div>   
-                                </div>
-                                <div class="xxl:w-auto xl:w-[90%] sm:w-auto w-[90%]">
-                                    <p class="font-medium pb-10">
-                                        Молебен – краткое богослужение просительного или благодарственного характера.
-                                    </p>
                                 </div>
                             </div>
-                            <div class="pr-10 xl:pt-0 pt-8 xxl:w-[38%] xl:w-[37%] lg:w-[60%] md:w-[80%]">
-                                <div>
+                            <div v-else class="pr-10 xl:pt-0 pt-8 xxl:w-[38%] xl:w-[37%] lg:w-[60%] md:w-[80%]">
+                                <div v-if="names.length < 10">
                                     <h3 class="font-semibold text-2xl">
                                         Впишите имена:
                                     </h3>
                                 </div>
                                 <div class="md:pt-0 pt-2">
-                                    <p>
+                                    <p v-if="service == 'Литургия'">
+                                        Литургия особая на всякое прошение за рабов божих:
+                                    </p>
+                                    <p v-if="service == 'Сорокоуст'">
+                                        Сорокоуст о здравии:
+                                    </p>
+                                    <p v-if="service == 'Молебен'">
+                                        Литургия особая на всякое прошение за рабов божих:
+                                    </p>
+                                    <p v-if="service == 'Панихида'">
                                         Литургия особая на всякое прошение за рабов божих:
                                     </p>
                                 </div>
-                                <div class="xl:w-auto md:w-[83%] sm:w-[66%] w-[288px]" style="background-color: #FFFFFF;">
+                                <div v-if="names.length < 10" class="xl:w-auto md:w-[83%] sm:w-[66%] w-[288px]" style="background-color: #FFFFFF;">
                                     <div class="my-4 flex items-center justify-between" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                        <div>
-                                            <input type="text" placeholder="Имя" class="w-full py-2 px-4" style="outline: none;">
+                                        <div style="flex-grow: 1">
+                                            <input v-on:keyup.enter="setName" v-model="typedName" type="text" placeholder="Имя" class="w-full py-2 px-4" style="outline: none;">
                                         </div>
-                                        <div class="sm:text-sm text-xs pr-2 xxl:w-[28%] xl:w-[36%] md:w-[34%] sm:w-[64%] w-[60%] hidden">
-                                            <button class="py-1 px-4" style="background-color: #B5B5B5; border-radius: 2px; color: #ffffff;">
+                                        <div class="sm:text-sm text-xs pr-2 xxl:w-[28%] xl:w-[36%] md:w-[34%] sm:w-[64%] w-[54%] hidden">
+                                            <button v-on:click="setName" class="py-1 px-4" style="background-color: #B5B5B5; border-radius: 2px; color: #ffffff;">
                                                 Добавить имя
                                             </button>
                                         </div>
-                                        <div class="sm:text-sm text-xs pr-2 xxl:w-[28%] xl:w-[36%] md:w-[34%] sm:w-[64%] w-[60%]">
-                                            <button class="link-4 py-1 px-4">
+                                        <div class="sm:text-sm text-xs pr-2 xxl:w-[28%] xl:w-[36%] md:w-[34%] sm:w-[64%] w-[54%]">
+                                            <button v-on:click="setName" class="link-4 py-1 px-4">
                                                 Добавить имя
                                             </button>
                                         </div>
                                     </div>
                                 </div>
-                                <div>
+                                <div v-if="names.length">
                                     <h3 class="font-semibold text-[24px]">
                                         Вписанные имена:
                                     </h3>
                                 </div>
                                 <div class="flex flex-wrap xxl:justify-between pt-3 -my-1 xl:pr-14">
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
+                                    <div v-for="(name, index) in names" :key="name" class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
+                                        <div class="w-[170px]" style="word-break: break-all">
+                                            {{ name }}
                                         </div>
-                                        <button class="button-delete relative"></button>
+                                        <button class="button-delete relative" v-on:click="removeName(index)"></button>
                                     </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константин</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                </div> 
+                                </div>
                             </div>
                             <div class="mt-8 flex justify-center xl:w-[97%] md:w-[98%] sm:w-[95%] w-[93%]">
-                                <button class="link-4 py-4 px-8" style="border-radius: 2px;">
-                                    Подать требу
-                                </button>
-                            </div>
-                            <div class="mt-8 flex justify-center xl:w-[97%] md:w-[98%] sm:w-[95%] w-[93%] hidden">
-                                <button class="ml-12 py-4 px-8" style="background-color: #B5B5B5; border-radius: 2px; color: #ffffff;">
-                                    Подать требу
-                                </button>
+                                <div v-if="isSecondStep" class="mx-2">
+                                    <button v-on:click="isSecondStep = false" class="sm:py-4 py-3 sm:px-8 px-4" style="background-color: #373737; color: #ffffff; border-radius: 2px;">
+                                        Назад
+                                    </button>
+                                </div>
+                                <div class="mx-2">
+                                    <button v-on:click="actionForm" :class="{active: unLockStep}" class="action-btn py-4 px-8" style="">
+                                        Подать требу
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </form>
-                </div>
-                <div class="pb-6" style="background-color: #FAFAFA; border: 1px solid #DFDFDE; box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.25); border-radius: 2px;">
-                    <form action="form" class="md:pl-8 pl-6">
-                        <div>
-                            <h3 class="font-medium md:text-[40px] text-[33px] pt-10 pb-8">
-                                Выберите требу:
-                            </h3>
-                        </div>
-                        <div class="flex justify-between flex-wrap items-baseline">
-                            <div class="xxl:w-[60%] xl:w-[63%] lg:w-[90%]">
-                                <div class="font-medium flex -mx-2 pb-6 md:flex-nowrap flex-wrap -my-2">
-                                    <div class="mx-2 px-4 py-2 link-5 md:w-auto sm:w-[45%] w-[64%] md:my-0 my-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                        <button class="sm:text-base text-sm">
-                                            Литургия
-                                        </button>
-                                    </div>   
-                                    <div class="mx-2 px-4 py-2 link-5 md:w-auto sm:w-[45%] w-[64%] md:my-0 my-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                        <button class="sm:text-base text-sm">
-                                            Сорокоуст (40 литургий)
-                                        </button>
-                                    </div>  
-                                    <div class="mx-2 px-4 py-2 link-5 md:w-auto sm:w-[45%] w-[64%] md:my-0 my-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                        <button class="sm:text-base text-sm">
-                                            Молебен
-                                        </button>
-                                    </div>  
-                                    <div class="mx-2 px-4 py-2 md:w-auto sm:w-[45%] w-[64%] md:my-0 my-2" style="border: 1px solid #C1C1C1; border-radius: 2px;  background-color: #373737; color: #ffffff;">
-                                        <button class="sm:text-base text-sm">
-                                            Панихида
-                                        </button>
-                                    </div>   
-                                </div>
-                                <div class="xxl:w-auto xl:w-[90%] sm:w-auto w-[90%]">
-                                    <p class="font-medium pb-10">
-                                        Панихида – за упокойная служба.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="pr-10 xl:pt-0 pt-8 xxl:w-[38%] xl:w-[37%] lg:w-[60%] md:w-[80%]">
-                                <div>
-                                    <h3 class="font-semibold text-2xl">
-                                        Впишите имена:
-                                    </h3>
-                                </div>
-                                <div class="md:pt-0 pt-2">
-                                    <p>
-                                        Литургия особая на всякое прошение за рабов божих:
-                                    </p>
-                                </div>
-                                <div class="xl:w-auto md:w-[83%] sm:w-[66%] w-[288px]" style="background-color: #FFFFFF;">
-                                    <div class="my-4 flex items-center justify-between" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                        <div>
-                                            <input type="text" placeholder="Имя" class="w-full py-2 px-4" style="outline: none;">
-                                        </div>
-                                        <div class="sm:text-sm text-xs pr-2 xxl:w-[28%] xl:w-[36%] md:w-[34%] sm:w-[64%] w-[60%] hidden">
-                                            <button class="py-1 px-4" style="background-color: #B5B5B5; border-radius: 2px; color: #ffffff;">
-                                                Добавить имя
-                                            </button>
-                                        </div>
-                                        <div class="sm:text-sm text-xs pr-2 xxl:w-[28%] xl:w-[36%] md:w-[34%] sm:w-[64%] w-[60%]">
-                                            <button class="link-4 py-1 px-4">
-                                                Добавить имя
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h3 class="font-semibold text-[24px]">
-                                        Вписанные имена:
-                                    </h3>
-                                </div>
-                                <div class="flex flex-wrap xxl:justify-between pt-3 -my-1 xl:pr-14">
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константинопольский</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                    <div class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]">
-                                            <span>Константин</span>
-                                        </div>
-                                        <button class="button-delete relative"></button>
-                                    </div>
-                                </div> 
-                            </div>
-                            <div class="mt-8 flex justify-center xl:w-[97%] md:w-[98%] sm:w-[95%] w-[93%]">
-                                <button class="link-4 py-4 px-8" style="border-radius: 2px;">
-                                    Подать требу
-                                </button>
-                            </div>
-                            <div class="mt-8 flex justify-center xl:w-[97%] md:w-[98%] sm:w-[95%] w-[93%] hidden">
-                                <button class="ml-12 py-4 px-8" style="background-color: #B5B5B5; border-radius: 2px; color: #ffffff;">
-                                    Подать требу
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -2208,5 +1425,102 @@
 </div>
 <script src="js/jquery-js.js"></script>
 <script src="js/main.js"></script>
+
+<script>
+  Vue.createApp({
+    data() {
+      return {
+        service: 'Литургия',
+        names: [],
+        typedName: '',
+        serviceKind: '',
+        singleName: '',
+        isSecondStep: false,
+        sum: '',
+        email: '',
+        fio: '',
+        phone: '',
+        agreeOfert: true,
+        agreePersonal: true
+      }
+    },
+    methods: {
+      setName() {
+        if (this.names.length > 9 || this.typedName == '') return;
+        this.names.push(this.typedName);
+        this.typedName = '';
+      },
+
+      removeName(index) {
+        this.names.splice(index, 1);
+      },
+
+      actionForm() {
+        if (this.unLockStep && !this.isSecondStep) {
+          this.isSecondStep = true;
+        }
+      },
+
+      changeService(service) {
+        this.service = service;
+        if (!this.unLockStep) {
+          this.isSecondStep = false;
+        }
+      }
+    },
+    computed: {
+      unLockStep() {
+
+        if (!this.isSecondStep) {
+          if (this.service == 'Литургия') {
+            if (this.serviceKind && this.names.length) {
+              return true
+            }
+          }
+
+          if (this.service == 'Сорокоуст') {
+            if (this.serviceKind && this.singleName) {
+              return true
+            }
+          }
+
+          if (this.service == 'Молебен' || this.service == 'Панихида') {
+            if (this.names.length) {
+              return true
+            }
+          }
+        }
+
+        if (this.isSecondStep && this.checkFormFields) {
+          if (this.service == 'Литургия') {
+            if (this.serviceKind && this.names.length) {
+              return true
+            }
+          }
+
+          if (this.service == 'Сорокоуст') {
+            if (this.serviceKind && this.singleName) {
+              return true
+            }
+          }
+
+          if (this.service == 'Молебен' || this.service == 'Панихида') {
+            if (this.names.length) {
+              return true
+            }
+          }
+        }
+
+        return false;
+      },
+
+      checkFormFields() {
+        if (this.sum && this.email && this.fio && this.phone && this.agreeOfert && this.agreePersonal) {
+          return true
+        } return false
+      }
+    }
+  }).mount('#app');
+</script>
 </body>
 </html>
