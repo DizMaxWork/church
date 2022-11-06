@@ -288,3 +288,26 @@ body{
    background-color: #FAFAFA;
    color: #373737;
 }
+.photo-1 img{
+   display: block;
+   margin-bottom: 50px;
+   width: 688px;
+   height: 360px;  
+}
+.photo-2{
+   margin: 10px;
+   position: relative;
+}
+.photo-2 img{
+   width: 160px;
+}
+.slider-nav{
+   width: 49%;
+   display: block;
+}
+.slick-list{
+   padding: 0 !important;
+}
+.slider-for{
+   height: 400px;
+}
