@@ -1897,6 +1897,10 @@ video {
     height: 231px;
   }
 
+  .md\:h-auto {
+    height: auto;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
