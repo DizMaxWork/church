@@ -338,4 +338,10 @@ body{
     background: #D53E34;
     border-radius: 2px;
     color: #ffffff;
+    transition: 0.5s;
+}
+
+.action-btn.active:hover {
+    background-color: #373737;
+    color: #ffffff;
 }
