@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@600;700&display=swap" rel="stylesheet">
     <title>Успений</title>
     <script src="https://unpkg.com/vue@next"></script>
+    <script type="text/javascript" src="https://vk.com/js/api/share.js?95" charset="windows-1251"></script>
 </head>
 <body>
 <div>
@@ -852,7 +853,7 @@
                                         <div class="py-2 px-4 mb-4 mx-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
                                             <a href="#" class="font-medium text-sm">5 000 ₽</a>
                                         </div>
-                                        <div class="py-2 pl-4 xxl:w-[30%] xl:w-[39%] md:w-[30%] sm:w-[34%] w-[64%] xxl:h-auto xl:h-[43px] md:h-auto h-[42px] mx-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                        <div class="py-2 pl-4 xxl:w-[32%] xl:w-[39%] md:w-[30%] sm:w-[34%] w-[183px] xxl:h-auto xl:h-[43px] md:h-auto h-[42px] mx-2" style="border: 1px solid #C1C1C1; border-radius: 2px;">
                                             <input type="text" placeholder="Введите сумму" style="background-color: transparent; outline: none;" class="md:w-auto w-[92%]">
                                         </div>
                                     </div>
@@ -1164,16 +1165,16 @@
                                 </div>
                                 <div class="md:pt-0 pt-2">
                                     <p v-if="service == 'Литургия'">
-                                        Литургия особая на всякое прошение за рабов божих:
+                                        Литургия особая на всякое прошение за рабов божьих:
                                     </p>
                                     <p v-if="service == 'Сорокоуст'">
                                         Сорокоуст о здравии:
                                     </p>
                                     <p v-if="service == 'Молебен'">
-                                        Литургия особая на всякое прошение за рабов божих:
+                                        Литургия особая на всякое прошение за рабов божьих:
                                     </p>
                                     <p v-if="service == 'Панихида'">
-                                        Литургия особая на всякое прошение за рабов божих:
+                                        Литургия особая на всякое прошение за рабов божьих:
                                     </p>
                                 </div>
                                 <div v-if="names.length < 10" class="xl:w-auto md:w-[83%] sm:w-[66%] w-[288px]" style="background-color: #FFFFFF;">
@@ -1227,20 +1228,39 @@
         <section class="md:pt-[177px] pt-[80px] md:pb-[104px] pb-[80px]">
             <div class="container mx-auto px-5">
                 <div class="flex items-center md:flex-nowrap flex-wrap md:justify-start justify-center">
-                    <div class="flex -mx-5 md:order-1 order-2 md:w-auto w-[80%]">
-                        <div class="px-5">
-                            <a href="">
-                                <img src="img/60.svg" alt="">
-                            </a>
-                        </div>
-                        <div class="px-5">
-                            <a href="#">
-                                <img src="img/61.svg" alt="">
-                            </a>
-                        </div>
+                    <div class="flex md:order-1 order-2 xl:w-auto lgw-[16%]: md:w-[42%] w-[80%] md:justify-start justify-center">
+                        <div class="mr-4">
+                            <script type="text/javascript">
+                              document.write(VK.Share.button({url: 'http://mysite.com', title: 'Заголовок страницы'}, {type: 'custom', text: '<img src="https://vk.com/images/share_32_2x.png" width="70" height="70" border-radius="24px">'}));
+                            </script>
+                          </div>
+                          <div>
+                            <div id="ok_shareWidget"></div>
+                              <script>
+                              !function (d, id, did, st, title, description, image) {
+                                function init(){
+                                  OK.CONNECT.insertShareWidget(id,did,st, title, description, image);
+                                }
+                                if (!window.OK || !OK.CONNECT || !OK.CONNECT.insertShareWidget) {
+                                  var js = d.createElement("script");
+                                  js.src = "https://connect.ok.ru/connect.js";
+                                  js.onload = js.onreadystatechange = function () {
+                                  if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+                                    if (!this.executed) {
+                                      this.executed = true;
+                                      setTimeout(init, 0);
+                                    }
+                                  }};
+                                  d.documentElement.appendChild(js);
+                                } else {
+                                  init();
+                                }
+                              }(document,"ok_shareWidget",document.URL,'{"sz":70,"st":"rounded","bgclr":"ED8207","txclr":"FFFFFF"}',"","","");
+                              </script>
+                          </div>
                     </div>
-                    <div class="xxl:w-[56%] xl:w-[67%] lg:w-[80%] md:pl-16 order-1 md:pb-0 pb-12">
-                        <h3 class="xl:text-[64px] lg:text-[54px] md:text-[26px] text-[32px] md:leading-none leading-tight" style="font-family: Jost;">
+                    <div class="xxl:w-[56%] xl:w-[67%] lg:w-full md:w-[80%] w-full xl:pl-16 order-1 md:pb-0 pb-12">
+                        <h3 class="xl:text-[64px] lg:text-[54px] md:text-[34px] text-[32px] md:leading-none leading-tight" style="font-family: Jost;">
                             ПОЖАЛУЙСТА СДЕЛАЙТЕ РЕПОСТ В СОЦИАЛЬНЫХ СЕТЯХ
                         </h3>
                     </div>
