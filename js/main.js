@@ -40,6 +40,12 @@ $(document).ready(function (){
                 settings: {
                     slidesToShow:3,
                 } 
+            },
+            {
+                breakpoint: 375,
+                settings: {
+                    slidesToShow:2,
+                } 
             }
         ]
     })
