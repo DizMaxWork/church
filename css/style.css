@@ -43,7 +43,7 @@ body{
     width: 100%;
     background-image: url(../img/line.svg);
     left: 0;
-    top: 61px;
+    top: 5px;
  }
  @media (min-width:576px) {
     .line::before{
@@ -111,7 +111,7 @@ body{
     height: 16px;
     width: 10px;
     background-image: url(../img/left.svg);
-    top: 57px;
+    top: 2px;
     left: -18px;
  }
  @media (min-width:768px){
@@ -125,7 +125,7 @@ body{
     height: 16px;
     width: 10px;
     background-image: url(../img/right.svg);
-    top: 57px;
+    top: 2px;
     right: -18px;
  }
  @media (min-width:576px){
@@ -344,4 +344,21 @@ body{
 .action-btn.active:hover {
     background-color: #373737;
     color: #ffffff;
+}
+
+.nav-item.current {
+    color: #D53E34;
+    pointer-events: none;
+}
+
+.month-filter i {
+    display: none;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.calendar-event:last-child {
+    border-bottom: none!important;
 }
