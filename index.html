@@ -1138,7 +1138,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div v-if="service == 'Сорокоуст'" class="pr-10 xl:pt-0 pt-8 xxl:w-[38%] xl:w-[37%] lg:w-[60%] md:w-[80%]">
+                            <div v-if="service == 'Сорокоуст' && serviceKind" class="pr-10 xl:pt-0 pt-8 xxl:w-[38%] xl:w-[37%] lg:w-[60%] md:w-[80%]">
                                 <div>
                                     <h3 class="font-semibold text-2xl">
                                         Впишите имя:
@@ -1157,7 +1157,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div v-else class="xs:pr-10 xl:pt-0 pt-8 xxl:w-[38%] xl:w-[37%] lg:w-[60%] md:w-[80%]">
+                            <div v-if="service == 'Молебен' || service == 'Панихида' || (service == 'Литургия' && serviceKind)" class="xs:pr-10 xl:pt-0 pt-8 xxl:w-[38%] xl:w-[37%] lg:w-[60%] md:w-[80%]">
                                 <div v-if="names.length < 10">
                                     <h3 class="font-semibold text-2xl">
                                         Впишите имена:
@@ -1450,7 +1450,7 @@
   Vue.createApp({
     data() {
       return {
-        service: 'Литургия',
+        service: '',
         names: [],
         typedName: '',
         serviceKind: '',
