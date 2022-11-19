@@ -926,7 +926,7 @@
                                 Оставьте любое посильное пожертвование:
                             </h3>
                         </div>
-                        <div class="flex justify-between flex-wrap items-baseline">
+                        <div class="flex justify-between flex-wrap">
                             <div v-if="!isSecondStep" class="xxl:w-[60%] xl:w-[63%] lg:w-[90%]">
                                 <div class="font-medium flex -mx-2 pb-6 md:flex-nowrap flex-wrap -my-2">
                                     <div v-on:click="changeService('Литургия')" :class="{active: service == 'Литургия'}" class="service-button cursor-pointer mx-2 px-4 py-2 md:w-auto sm:w-[45%] xs:w-[64%] w-4/5 md:my-0 my-2">
@@ -934,17 +934,17 @@
                                             Литургия
                                         </button>
                                     </div>
-                                    <div v-on:click="changeService('Сорокоуст')" :class="{active: service == 'Сорокоуст'}" class="service-button cursor-pointer mx-2 px-4 py-2 link-5 md:w-auto sm:w-[45%] xs:w-[64%] w-4/5 md:my-0 my-2">
+                                    <div v-on:click="changeService('Сорокоуст'); serviceKind = ''; names.length = 0" :class="{active: service == 'Сорокоуст'}" class="service-button cursor-pointer mx-2 px-4 py-2 link-5 md:w-auto sm:w-[45%] xs:w-[64%] w-4/5 md:my-0 my-2">
                                         <button class="sm:text-base text-sm">
                                             Сорокоуст (40 литургий)
                                         </button>
                                     </div>
-                                    <div v-on:click="changeService('Молебен')" :class="{active: service == 'Молебен'}" class="service-button cursor-pointer mx-2 px-4 py-2 link-5 md:w-auto sm:w-[45%] xs:w-[64%] w-4/5 md:my-0 my-2">
+                                    <div v-on:click="changeService('Молебен'); serviceKind = ''" :class="{active: service == 'Молебен'}" class="service-button cursor-pointer mx-2 px-4 py-2 link-5 md:w-auto sm:w-[45%] xs:w-[64%] w-4/5 md:my-0 my-2">
                                         <button class="sm:text-base text-sm">
                                             Молебен
                                         </button>
                                     </div>
-                                    <div v-on:click="changeService('Панихида')" :class="{active: service == 'Панихида'}" class="service-button cursor-pointer mx-2 px-4 py-2 link-5 md:w-auto sm:w-[45%] xs:w-[64%] w-4/5 md:my-0 my-2">
+                                    <div v-on:click="changeService('Панихида'); serviceKind = ''" :class="{active: service == 'Панихида'}" class="service-button cursor-pointer mx-2 px-4 py-2 link-5 md:w-auto sm:w-[45%] xs:w-[64%] w-4/5 md:my-0 my-2">
                                         <button class="sm:text-base text-sm">
                                             Панихида
                                         </button>
@@ -993,7 +993,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div :class="{plate_white: serviceKind == '' || serviceKind == 'О здравии' || serviceKind == 'Об упокоении'}"
+                                            <div v-if="service == 'Литургия'" :class="{plate_white: serviceKind == '' || serviceKind == 'О здравии' || serviceKind == 'Об упокоении'}"
                                                  class="mx-2 px-4 py-2 xxl:w-[60%] lg:w-[60%] md:w-[70%] sm:w-[57%] xs:w-[87%] w-[91%] lg:mt-0 mt-4 plate">
                                                 <div class="">
                                                     <div class="xxl:text-base xl:text-sm">
@@ -1138,47 +1138,18 @@
                                     </div>
                                 </div>
                             </div>
-                            <div v-if="service == 'Сорокоуст' && serviceKind" class="pr-10 xl:pt-0 pt-8 xxl:w-[38%] xl:w-[37%] lg:w-[60%] md:w-[80%]">
+
+                            <div v-if="serviceKind || service == 'Молебен' || service == 'Панихида'" class="flex flex-col xs:pr-10 xl:pt-0 pt-8 xxl:w-[38%] xl:w-[37%] lg:w-[60%] md:w-[80%]">
                                 <div>
-                                    <h3 class="font-semibold text-2xl">
+                                    <h3 v-if="service != 'Сорокоуст'" class="font-semibold text-2xl">
+                                        Впишите имена:
+                                    </h3>
+                                    <h3 v-else class="font-semibold text-2xl">
                                         Впишите имя:
                                     </h3>
                                 </div>
-                                <div class="md:pt-0 pt-2">
-                                    <p>
-                                        Сорокоуст о здравии:
-                                    </p>
-                                </div>
-                                <div class="xl:w-auto md:w-[83%] sm:w-[66%] w-[288px]" style="background-color: #FFFFFF;">
-                                    <div class="my-4 flex items-center justify-between" style="border: 1px solid #C1C1C1; border-radius: 2px;">
-                                        <div>
-                                            <input v-model="singleName" type="text" placeholder="Имя" class="w-full py-2 px-4" style="outline: none;">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div v-if="service == 'Молебен' || service == 'Панихида' || (service == 'Литургия' && serviceKind)" class="xs:pr-10 xl:pt-0 pt-8 xxl:w-[38%] xl:w-[37%] lg:w-[60%] md:w-[80%]">
-                                <div v-if="names.length < 10">
-                                    <h3 class="font-semibold text-2xl">
-                                        Впишите имена:
-                                    </h3>
-                                </div>
-                                <div class="md:pt-0 pt-2">
-                                    <p v-if="service == 'Литургия'">
-                                        Литургия особая на всякое прошение за рабов божьих:
-                                    </p>
-                                    <p v-if="service == 'Сорокоуст'">
-                                        Сорокоуст о здравии:
-                                    </p>
-                                    <p v-if="service == 'Молебен'">
-                                        Литургия особая на всякое прошение за рабов божьих:
-                                    </p>
-                                    <p v-if="service == 'Панихида'">
-                                        Литургия особая на всякое прошение за рабов божьих:
-                                    </p>
-                                </div>
-                                <div v-if="names.length < 10" class="xl:w-auto md:w-[83%] sm:w-[66%] xs:w-[288px] w-[270px]" style="background-color: #FFFFFF;">
-                                    <div class="my-4 flex items-center justify-between" style="border: 1px solid #C1C1C1; border-radius: 2px;">
+                                <div :class="{disabledType: isTypeDisabled()}" class="xl:w-auto md:w-[83%] sm:w-[66%] xs:w-[288px] w-[270px]">
+                                    <div class="my-4 flex items-center justify-between" style="border: 1px solid #C1C1C1; border-radius: 2px; background-color: #FFFFFF">
                                         <div style="flex-grow: 1">
                                             <input v-on:keyup.enter="setName" v-model="typedName" type="text" placeholder="Имя" class="w-full py-2 px-4" style="outline: none;">
                                         </div>
@@ -1194,17 +1165,44 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div v-if="names.length">
-                                    <h3 class="font-semibold text-[24px]">
-                                        Вписанные имена:
-                                    </h3>
-                                </div>
-                                <div class="flex flex-wrap xxl:justify-between pt-3 -my-1 xl:pr-14">
-                                    <div v-for="(name, index) in names" :key="name" class="xxl:w-[40%] xl:w-[60%] md:w-[50%] w-full py-1 flex items-center">
-                                        <div class="w-[170px]" style="word-break: break-all">
-                                            {{ name }}
+                                <div style="border: 1px solid #DFDFDE; border-radius: 2px; background: #FDFCFA;" class="flex-grow px-3 md:px-6 py-4 md:py-6">
+                                    <div style="font-family: Kelvinch; font-style: italic; min-height: 65px" class="text-ls md:text-xl xl:text-2xl text-center">
+                                        <p v-if="service == 'Литургия'">
+                                            <span class="text-[#D53E34]">Литургия</span>
+                                            <span v-if="serviceKind == 'О здравии'"> особая на всякое прошение за рабов божьих:</span>
+                                            <span v-if="serviceKind == 'Об упокоении'"> о упокоении рабов Божьих: </span>
+                                            <span v-if="serviceKind == 'О болящих'"> особая о болящих за рабов Божьих: </span>
+                                            <span v-if="serviceKind == 'О путешествующих'"> особая о путешествующих за рабов Божьих:</span>
+                                            <span v-if="serviceKind == 'На всякое прошение'"> особая на всякое прошение за рабов Божьих:</span>
+                                            <span v-if="serviceKind == 'Прошение на доброе дело'"> особая прошение на доброе дело за рабов Божьих:</span>
+                                            <span v-if="serviceKind == 'Благодарственное прошение'"> особая благодарственное прошение за рабов Божьих: </span>
+                                            <span v-if="serviceKind == 'О заключенных'"> особая о заключённых за рабов Божьих: </span>
+                                        </p>
+                                        <p v-if="service == 'Сорокоуст'">
+                                            <span class="text-[#D53E34]">Сорокоуст</span> о здравии:
+                                            <span v-if="serviceKind == 'О здравии'"> о здравии раба Божьего:</span>
+                                            <span v-if="serviceKind == 'Об упокоении'"> о упокоении раба Божьего:</span>
+                                        </p>
+                                        <p v-if="service == 'Молебен'">
+                                            <span class="text-[#D53E34]">Молебен</span> о здравии рабов Божьих:
+                                        </p>
+                                        <p v-if="service == 'Панихида'">
+                                            <span class="text-[#D53E34]">Панихида</span> за упокой рабов Божьих:
+                                        </p>
+                                    </div>
+                                    <div class="h-[160px] style-scroll overflow-y-auto pr-2 mt-3">
+                                        <div v-for="(name, index) in names" :key="name" class="py-2 flex items-center justify-between" style="border-bottom: 1px dashed black">
+                                            <div class="text-center flex-grow" style="word-break: break-all">
+                                                {{ name }}
+                                            </div>
+                                            <div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 cursor-pointer hover:text-white hover:bg-[#D43E34]"
+                                                 style="border: 1px solid #DFDFDE; transition: 0.3s"
+                                                 v-on:click="removeName(index)">
+                                                <svg style="margin-top: 1px" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6.136 6.184L3.904 3.952L1.672 6.184L0.96 5.464L3.192 3.24L0.96 1.016L1.672 0.304L3.904 2.528L6.128 0.304L6.84 1.016L4.608 3.24L6.84 5.464L6.136 6.184Z" fill="currentColor"/>
+                                                </svg>
+                                            </div>
                                         </div>
-                                        <button class="button-delete relative" v-on:click="removeName(index)"></button>
                                     </div>
                                 </div>
                             </div>
@@ -1465,8 +1463,19 @@
       }
     },
     methods: {
+
+      isTypeDisabled() {
+        if (this.service != 'Сорокоуст' && this.names.length == 10) {
+          return true
+        }
+        else if (this.service == 'Сорокоуст' && this.names.length == 1) {
+          return true
+        } else return false;
+      },
+
       setName() {
         if (this.names.length > 9 || this.typedName == '') return;
+        if (this.service == 'Сорокоуст' && this.names.length == 1 || this.typedName == '') return;
         this.names.push(this.typedName);
         this.typedName = '';
       },

@@ -7,6 +7,32 @@
     font-style: italic;
     font-display: swap;
 }
+
+:root {
+    --scrollbarBg: #DFDFDE;
+    --scrollbarThumb: #373737;
+    --scrollbarWidth: 8px;
+    --scrollbarBorder: 1px solid var(--scrollbarBg);
+    --scrollbarBorderRadius: 3px;
+}
+.style-scroll {
+    scrollbar-width: var(--scrollbarWidth);
+    scrollbar-color: var(--scrollbarThumb) var(--scrollbarBg);
+}
+.style-scroll::-webkit-scrollbar {
+    width: var(--scrollbarWidth);
+}
+.style-scroll::-webkit-scrollbar-track {
+    background: var(--scrollbarBg);
+    border-radius: var(--scrollbarBorderRadius);
+}
+.style-scroll::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbarThumb);
+    border-radius: var(--scrollbarBorderRadius);
+    border: var(--scrollbarBorder);
+}
+
+
 h2{
     font-family: Jost;
 }
@@ -269,19 +295,11 @@ body{
    height: 10px;
    margin: 7px 3px;
 }
-.plate_white .radio:checked + .radio-inside{
+.plate_white .radio:checked + .radio-inside {
    background: #373737;
    opacity: 0.2;
 }
-.button-delete::before{
-   content: '';
-   position: absolute;
-   width: 24px;
-   height: 24px;
-   background-image: url(../img/name-delete.svg);
-   bottom: -13px;
-   left: 25px;
-}
+
 .plate{
    border: 1px solid #C1C1C1; 
    border-radius: 2px; 
@@ -294,6 +312,13 @@ body{
    background-color: #FAFAFA;
    color: #373737;
 }
+
+.plate:hover {
+    background-color: #373737;
+    transition: 0.3s;
+    color: #FAFAFA!important;
+}
+
 .photo-1 img{
    display: block;
    margin-bottom: 50px;
@@ -361,4 +386,9 @@ p {
 
 .calendar-event:last-child {
     border-bottom: none!important;
+}
+
+.disabledType {
+    opacity: 0.5;
+    pointer-events: none;
 }
